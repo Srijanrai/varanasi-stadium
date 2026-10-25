@@ -1,0 +1,38 @@
+{
+  "status": "draft",
+  "phone": [],
+  "photos": [],
+  "tags": [],
+  "quickFacts": [],
+  "verifiedAt": null,
+  "verificationMethod": null,
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "transport",
+  "id": "tr-ropeway",
+  "slug": "kashi-ropeway",
+  "name": "Kashi Ropeway (Cantt to Godowlia)",
+  "nameHi": "काशी रोपवे (कैंट से गोदौलिया)",
+  "area": "godowlia",
+  "address": "Cantt station to Godowlia Chowk, Varanasi",
+  "pincode": "221001",
+  "geo": {
+    "lat": 25.32653,
+    "lng": 82.98626
+  },
+  "mode": "ropeway",
+  "summary": "India's first urban passenger ropeway, being built between Cantt station and Godowlia. Official status, stations and what we know.",
+  "description": "Official facts gathered (publish once a licensed photo is available): NHLML lists the project as 'Under Implementation' (no official opening date, hours or fares yet); 3.85 km monocable detachable gondola; stations named in tenders: Varanasi Cantt, Vidyapith, Rathyatra, Godowlia Chowk; foundation stone 24 Mar 2023 (PIB); PIB Parvatmala note (Mar 2025): 148 cabins, up to 96,000 passengers a day. It does not go to the stadium. [ADD FIRST-HAND] photo.",
+  "sources": [
+    {
+      "label": "NHLML – Ropeways",
+      "url": "https://nhlml.org/ropeways"
+    },
+    {
+      "label": "PIB – Foundation stone (24 Mar 2023)",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1910320"
+    }
+  ]
+}

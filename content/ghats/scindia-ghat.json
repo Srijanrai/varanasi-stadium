@@ -1,0 +1,60 @@
+{
+  "type": "ghat",
+  "phone": [],
+  "tags": [],
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "id": "g-scindia",
+  "slug": "scindia-ghat",
+  "name": "Scindia Ghat",
+  "nameHi": "सिंधिया घाट",
+  "area": "dashashwamedh",
+  "address": "Scindia Ghat, near Manikarnika, Varanasi",
+  "pincode": "221001",
+  "geo": {
+    "lat": 25.31215,
+    "lng": 83.01342
+  },
+  "summary": "Known for its half-sunken Shiva temple tilting into the river, just north of Manikarnika. History and how to see it.",
+  "aarti": [],
+  "activities": [
+    "photography",
+    "boat-ride"
+  ],
+  "boatsAvailable": true,
+  "photos": [
+    {
+      "src": "/images/ghats/scindia-ghat/scindia-ghat-1.jpg",
+      "alt": "Scindia Ghat and its half-submerged Shiva temple, Varanasi",
+      "credit": "Ilya Mauter / Wikimedia Commons",
+      "license": "cc-by",
+      "licenseName": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scindia_ghat_at_sunrise_July_2007.JPG",
+      "width": 1280,
+      "height": 960
+    }
+  ],
+  "quickFacts": [
+    "A Shiva temple here sank partly into the river about 150 years ago",
+    "Built in stone in 1835 by Baijabai Scindia of Gwalior",
+    "Best seen from a boat",
+    "The Siddha Kshetra lanes above it hold many old shrines"
+  ],
+  "description": "Scindia Ghat is the one with the temple that looks as if it's slowly sliding into the Ganga. Its Shiva temple sank partly into the river around 150 years ago, pushed down by the weight of the ghat being built around it, and it has stood at a tilt, half underwater, ever since. In the monsoon the river often covers it almost completely.\n\nThe ghat was once called Veereshwar Ghat, after the Atmavireshwar Shiva temple. Baijabai Scindia, the wife of Daulatrao Scindia of Gwalior, had it rebuilt in stone in 1835, which is where the present name comes from. Above the ghat is Siddha Kshetra, a tight maze of lanes packed with important small shrines; local belief holds that Agni, the god of fire, was born here.\n\nIt sits immediately north of Manikarnika, so the easiest and most respectful way to see the sunken temple is from a boat during a ride along the ghats, rather than by walking through the cremation area. Early morning light is the best time for photos of the temple itself.\n\nScindia is in the old city, about 18 km from the stadium at Ganjari by road, so it fits a morning boat ride on a non-match day.",
+  "sources": [
+    {
+      "label": "UP Tourism – Scindia Ghat",
+      "url": "https://uptourism.gov.in/en/article/scindia-ghat"
+    },
+    {
+      "label": "Varanasi district – Ganga Ghat",
+      "url": "https://varanasi.nic.in/tourist-place/ganga-ghat/"
+    }
+  ],
+  "updatedAt": "2026-10-25",
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "status": "published"
+}

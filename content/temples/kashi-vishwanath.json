@@ -1,0 +1,93 @@
+{
+  "status": "published",
+  "phone": [
+    "+916393131608"
+  ],
+  "photos": [
+    {
+      "src": "/images/temples/kashi-vishwanath/kashi-vishwanath-temple-1.jpg",
+      "alt": "Shri Kashi Vishwanath Temple, Varanasi",
+      "credit": "Gannu03 / Wikimedia Commons",
+      "license": "cc-by-sa",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shri_Kashi_Vishwanath_Temple_7.jpg",
+      "width": 1280,
+      "height": 960
+    }
+  ],
+  "tags": [],
+  "quickFacts": [
+    "Entry is free; Sugam Darshan costs ₹300 per person",
+    "Phones, cameras, any gadgets and even pens aren't allowed inside",
+    "Free lockers at Mandir Chauk, the helpdesk and the YSK centres",
+    "Book aarti and Sugam Darshan only on the official website or app"
+  ],
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "temple",
+  "id": "t-kashi-vishwanath",
+  "slug": "kashi-vishwanath",
+  "name": "Shri Kashi Vishwanath Temple",
+  "nameHi": "श्री काशी विश्वनाथ मंदिर",
+  "area": "dashashwamedh",
+  "address": "Lahori Tola, Domari, Varanasi",
+  "pincode": "221001",
+  "geo": {
+    "lat": 25.3109,
+    "lng": 83.0107
+  },
+  "deity": "Lord Shiva (Vishwanath)",
+  "website": "https://shrikashivishwanath.org",
+  "summary": "Kashi's most important Shiva temple. Official timings, aarti schedule, phone and locker rules, and how Sugam Darshan works.",
+  "description": "Shri Kashi Vishwanath is the temple most visitors to Varanasi plan their trip around. It is dedicated to Lord Shiva as Vishwanath, the lord of the universe, and is one of the twelve jyotirlingas. Since the Kashi Vishwanath Dham corridor was built, the temple connects straight to the Ganga, so you can walk up from the ghats instead of squeezing through the old lanes.\n\nThe temple is open from 3 am to 11 pm, with darshan in three windows through the day. Entry is free. If you're short of time on a match day, Sugam Darshan (₹300 per person) gives you a guided, queue-free visit with a Shastri, a box of prasad and locker use. Book it, and any aarti, only on the temple trust's official website or app. Agents outside who promise \"special darshan\" are not part of the official system.\n\nLeave your phone, camera, bag and even pens in the free lockers before you join the queue; nothing electronic is allowed inside. There's no formal dress code, but modest clothes are expected. If you want the Mangala Aarti at 3 am, report at Gate 1 by 2:30 am.\n\nThe stadium at Ganjari is roughly 16 km away in a straight line and further by road, so don't try to fit a peak-hour darshan into the same few hours as a match. Mornings before an evening game, or the day after, work much better.",
+  "openingHours": [
+    {
+      "name": "Temple open",
+      "time": "3:00 am – 11:00 pm"
+    },
+    {
+      "name": "Darshan",
+      "time": "4:00–11:00 am, 12:20–7:00 pm, 8:30–9:00 pm"
+    },
+    {
+      "name": "Entry from the ghat side (Gate 1)",
+      "time": "6:00 am – 9:00 pm"
+    }
+  ],
+  "aartiTimings": [
+    {
+      "name": "Mangala Aarti",
+      "time": "3:00–4:00 am",
+      "note": "report by 2:30 am at Gate 1"
+    },
+    {
+      "name": "Mid-day Bhog Aarti",
+      "time": "11:15 am – 12:20 pm"
+    },
+    {
+      "name": "Saptarishi Aarti",
+      "time": "7:00–8:15 pm"
+    },
+    {
+      "name": "Shringar / Night Aarti",
+      "time": "9:00–10:15 pm"
+    }
+  ],
+  "dressCode": "No formal dress code; the temple trust asks visitors to wear decent clothes.",
+  "photographyAllowed": false,
+  "sources": [
+    {
+      "label": "Shri Kashi Vishwanath Temple Trust FAQ",
+      "url": "https://shrikashivishwanath.org/pdffile/FAQ_SHRI_KASHI_VISHWANTH_TEMPLE_2_0_pdf.pdf"
+    },
+    {
+      "label": "Shri Kashi Vishwanath Temple Trust",
+      "url": "https://shrikashivishwanath.org/"
+    }
+  ]
+}

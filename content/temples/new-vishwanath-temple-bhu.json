@@ -1,0 +1,67 @@
+{
+  "type": "temple",
+  "phone": [],
+  "tags": [],
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "status": "published",
+  "id": "t-new-vishwanath-bhu",
+  "slug": "new-vishwanath-temple-bhu",
+  "name": "Shri Vishwanath Temple, BHU",
+  "nameHi": "श्री विश्वनाथ मंदिर, काशी हिंदू विश्वविद्यालय",
+  "area": "lanka",
+  "address": "BHU campus, Varanasi",
+  "pincode": "221005",
+  "geo": {
+    "lat": 25.266034,
+    "lng": 82.987847
+  },
+  "deity": "Lord Shiva",
+  "summary": "The tall white-marble Shiva temple at the heart of the BHU campus, open to everyone. Calm, spacious and easy to reach from Lanka.",
+  "openingHours": [
+    {
+      "name": "Open",
+      "time": "5:00 am – 7:00 pm",
+      "note": "as listed by the UP government's Kashi portal"
+    }
+  ],
+  "aartiTimings": [],
+  "quickFacts": [
+    "Completed in 1962; about 76.5 m tall",
+    "Open to people of every caste and creed",
+    "Planned by BHU's founder, Pt. Madan Mohan Malaviya",
+    "Inside the BHU campus, a short ride from Lanka gate"
+  ],
+  "photos": [
+    {
+      "src": "/images/temples/new-vishwanath-temple-bhu/new-vishwanath-temple-bhu-1.jpg",
+      "alt": "Shri Vishwanath Temple at BHU, Varanasi",
+      "credit": "Heliophilous / Wikimedia Commons",
+      "license": "cc-by-sa",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Vishwanath_Temple_(BHU).jpg",
+      "width": 1280,
+      "height": 960
+    }
+  ],
+  "description": "Locals often call it the New Vishwanath Temple or the Birla Mandir, but its proper name is the Shri Vishwanath Temple, and it stands at the centre of the Banaras Hindu University campus. Pandit Madan Mohan Malaviya, who founded BHU, planned it in detail himself, and the Birla family funded its construction. According to the university it was completed in 1962 and its marble spire rises about 76.5 metres, making it one of the tallest temple towers in India.\n\nIt was built to be open to all castes and creeds, which was a deliberate statement at the time. Inside is a Shiva lingam, and the walls carry verses from the Vedas and the Bhagavad Gita alongside pictures. The gardens around it are wide and green, a welcome change from the crush of the old city.\n\nThe UP government's Kashi portal lists it as open from 5 am to 7 pm. Because it's inside the campus, it's an easy, unhurried visit: take an auto or e-rickshaw from Lanka gate to the temple.\n\nIf you're staying near BHU for a match, this is the most relaxed temple visit you can fit in. Ganjari is on the same side of the city, so the drive out to the stadium is shorter than from the ghats.",
+  "sources": [
+    {
+      "label": "BHU – International Student Admission 2025-26 (p.21)",
+      "url": "https://www.bhu.ac.in/Images/files/BHU%20FSR%202025-26_website.pdf"
+    },
+    {
+      "label": "Varanasi district – Temples of importance",
+      "url": "https://varanasi.nic.in/temples-of-importance/"
+    },
+    {
+      "label": "Kashi (Govt of UP) – Vishwanath Temple BHU",
+      "url": "https://kashi.gov.in/listing-details/vishwanath-temple-bhu"
+    }
+  ]
+}

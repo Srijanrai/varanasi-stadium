@@ -1,0 +1,29 @@
+{
+  "lastChecked": "2026-10-25",
+  "progressPercent": 90,
+  "progressNote": "News reports from mid-2026 put construction at around 90%. The original May 2026 target has slipped; no new official completion date yet.",
+  "firstMatchNote": "Not officially announced",
+  "ticketStatus": "not-on-sale",
+  "ticketSeller": null,
+  "facts": [
+    { "label": "Location", "value": "Ganjari, near Rajatalab, Varanasi", "source": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Varanasi_Cricket_Stadium" } },
+    { "label": "Seating", "value": "About 30,000", "source": { "label": "Gulf News", "url": "https://gulfnews.com/sport/cricket/varanasi-stadium-reportedly-set-to-host-wpl-in-2027-eyes-future-ipl-matches-1.500676250" } },
+    { "label": "Reported cost", "value": "₹330–450 crore (reports differ)", "source": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Varanasi_Cricket_Stadium" } },
+    { "label": "Expected ready", "value": "Before IPL 2027 (not confirmed)", "source": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Varanasi_Cricket_Stadium" } },
+    { "label": "Distance from Cantt", "value": "Roughly 15–18 km by road (approx.)" }
+  ],
+  "updates": [
+    {
+      "date": "2026-08-17",
+      "title": "Divisional Commissioner inspects the site",
+      "body": "The Divisional Commissioner visited Ganjari to review construction progress at the stadium.",
+      "sources": [{ "label": "NewKerala", "url": "https://www.newkerala.com/news/a/up-varanasi-div-commissioner-inspects-lbs-airport-expansion-424.htm" }]
+    },
+    {
+      "date": "2026-06-30",
+      "title": "Around 90% of construction reported complete",
+      "body": "Reports in June said roughly 90% of the work was done. The May 2026 completion target had been missed.",
+      "sources": [{ "label": "Khel Now", "url": "https://khelnow.com/cricket/first-look-varanasi-cricket-stadium-202609" }]
+    }
+  ]
+}

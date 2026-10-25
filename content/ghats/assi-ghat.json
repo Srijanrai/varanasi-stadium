@@ -1,0 +1,75 @@
+{
+  "status": "published",
+  "phone": [],
+  "photos": [
+    {
+      "src": "/images/ghats/assi-ghat/assi-ghat-1.jpg",
+      "alt": "Assi Ghat, Varanasi",
+      "credit": "Titodutta / Wikimedia Commons",
+      "license": "cc0",
+      "licenseName": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Assi_Ghat_Varanasi_morning_Aarti.jpg",
+      "width": 1145,
+      "height": 644
+    }
+  ],
+  "tags": [],
+  "quickFacts": [
+    "Subah-e-Banaras: chants, yoga and music at sunrise",
+    "A calmer evening aarti than Dashashwamedh",
+    "Boat rides start here",
+    "Closest main ghat to BHU and Lanka"
+  ],
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "ghat",
+  "id": "g-assi",
+  "slug": "assi-ghat",
+  "name": "Assi Ghat",
+  "nameHi": "अस्सी घाट",
+  "area": "assi",
+  "address": "Assi, Varanasi",
+  "pincode": "221005",
+  "geo": {
+    "lat": 25.28865,
+    "lng": 83.00676
+  },
+  "activities": [
+    "aarti",
+    "boat-ride",
+    "morning-programme"
+  ],
+  "boatsAvailable": true,
+  "summary": "The southernmost ghat, where the Assi stream meets the Ganga. Home of the sunrise Subah-e-Banaras programme and a calmer evening aarti.",
+  "description": "Assi is the southernmost of the main ghats, built where the small Assi stream flows into the Ganga. Legend says the stream sprang up where Goddess Durga's sword fell after she defeated the demons Shumbha and Nishumbha. A large Shiva lingam sits under a peepal tree on the ghat, and the Asisangameshvara temple stands just off it.\n\nMornings are the reason to come. At sunrise the Subah-e-Banaras programme fills the ghat with Vedic chanting, yoga and live classical music, and UP Tourism builds its heritage walk around it. The evening aarti here is smaller and calmer than the one at Dashashwamedh, which suits families and anyone who'd rather not fight for space.\n\nAssi is also the easiest place to start a boat ride north along the ghats, and the lanes behind it are full of cafés and bookshops popular with students and long-stay visitors. It's especially lively during Magh Mela, Maha Shivratri and Dev Deepawali.\n\nBecause Assi is close to BHU and Lanka, it's one of the more convenient riverside spots for match visitors: the drive out to Ganjari is a little shorter than from the old city further north. A sunrise visit here followed by an evening match makes a comfortable day.",
+  "aarti": [
+    {
+      "name": "Subah-e-Banaras",
+      "time": "at sunrise",
+      "note": "Vedic chants, yoga and classical music"
+    },
+    {
+      "name": "Evening aarti",
+      "time": "after sunset"
+    }
+  ],
+  "sources": [
+    {
+      "label": "UP Tourism – Assi Ghat",
+      "url": "https://uptourism.gov.in/en/article/assi-ghat"
+    },
+    {
+      "label": "Incredible India – Assi Ghat",
+      "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/assi-ghat"
+    },
+    {
+      "label": "UP Tourism – Varanasi",
+      "url": "https://uptourism.gov.in/en/page/varanasi"
+    }
+  ]
+}

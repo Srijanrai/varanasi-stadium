@@ -1,0 +1,67 @@
+{
+  "type": "temple",
+  "phone": [],
+  "tags": [],
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "status": "published",
+  "id": "t-tulsi-manas",
+  "slug": "tulsi-manas-mandir",
+  "name": "Tulsi Manas Mandir",
+  "nameHi": "तुलसी मानस मंदिर",
+  "area": "durgakund",
+  "address": "Sankat Mochan Road, Durgakund, Varanasi",
+  "pincode": "221005",
+  "geo": {
+    "lat": 25.287206,
+    "lng": 83.000417
+  },
+  "deity": "Lord Rama",
+  "summary": "White-marble Ram temple where the walls carry verses of the Ramcharitmanas. A short walk from Durga Kund and Sankat Mochan.",
+  "openingHours": [
+    {
+      "name": "Open",
+      "time": "Morning and evening, closed in the afternoon",
+      "note": "official sources list different hours; check locally"
+    }
+  ],
+  "aartiTimings": [],
+  "quickFacts": [
+    "Built in 1964 and inaugurated by President S. Radhakrishnan",
+    "Ramcharitmanas verses are carved on its marble walls",
+    "Ramayana puppet shows during Saawan (July–August)",
+    "Next door to the Durga temple"
+  ],
+  "photos": [
+    {
+      "src": "/images/temples/tulsi-manas-mandir/tulsi-manas-mandir-1.jpg",
+      "alt": "Tulsi Manas Mandir, Varanasi",
+      "credit": "Nikhil399792 / Wikimedia Commons",
+      "license": "cc-by-sa",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manas_Mandir.jpg",
+      "width": 1280,
+      "height": 960
+    }
+  ],
+  "description": "Tulsi Manas Mandir honours both Lord Rama and Goswami Tulsidas, the poet who wrote the Ramcharitmanas, the Ramayana retelling that most of north India grew up with. Tradition holds that Tulsidas lived and wrote on this spot. The present temple is much newer: it was built in white marble by the Sureka family of Howrah and opened in 1964 by President S. Radhakrishnan.\n\nWhat makes it worth a visit is the walls. Verses from the Ramcharitmanas are carved all over them, so you can walk around reading the epic in stone. The temple also keeps a museum of Ramayana manuscripts and artefacts, and during the month of Saawan (July–August) it puts on a Ramayana exhibition with handmade puppets and puppet shows. Rama Navami is the busiest day of the year.\n\nThe two official tourism listings give different opening hours, so check at the gate before you plan around it. Both agree it's open in the morning and again in the evening.\n\nIt sits right beside the Durga temple and a few minutes from Sankat Mochan, so the three make an easy loop on the BHU side of the city. That side is a little closer to the stadium at Ganjari than the old city by the ghats.",
+  "sources": [
+    {
+      "label": "Incredible India – Tulsi Manas Mandir",
+      "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/tulsi-manas-mandir"
+    },
+    {
+      "label": "UP Tourism – Tulsi Manas Temple",
+      "url": "https://uptourism.gov.in/en/article/tulsi-manas-temple"
+    },
+    {
+      "label": "Kashi (Govt of UP) – Tulsi Manas Temple",
+      "url": "https://kashi.gov.in/listing-details/tulsi-manas-temple"
+    }
+  ]
+}

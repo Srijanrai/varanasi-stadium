@@ -1,0 +1,60 @@
+{
+  "type": "ghat",
+  "phone": [],
+  "tags": [],
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "id": "g-kedar",
+  "slug": "kedar-ghat",
+  "name": "Kedar Ghat",
+  "nameHi": "केदार घाट",
+  "area": "bengali-tola",
+  "address": "Kedar Ghat, Bengali Tola, Varanasi",
+  "pincode": "221001",
+  "geo": {
+    "lat": 25.29905,
+    "lng": 83.00728
+  },
+  "summary": "The ghat with the red-and-white striped Kedareshwar temple, busy in Shravan. History, festivals and when to visit.",
+  "aarti": [],
+  "activities": [
+    "bathing",
+    "boat-ride"
+  ],
+  "boatsAvailable": true,
+  "photos": [
+    {
+      "src": "/images/ghats/kedar-ghat/kedar-ghat-1.jpg",
+      "alt": "Kedar Ghat seen from the Ganga, Varanasi",
+      "credit": "Marcin Białek / Wikimedia Commons",
+      "license": "cc-by-sa",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Varanasi_2010_Kedar_Ghat.jpg",
+      "width": 1280,
+      "height": 881
+    }
+  ],
+  "quickFacts": [
+    "Named after the Kedareshwar Shiva temple",
+    "The temple is painted in bold red and white stripes",
+    "Busiest in Shravan (July–August) and on eclipse days",
+    "Between Assi and Dashashwamedh"
+  ],
+  "description": "Kedar Ghat is easy to spot from the river: the Kedareshwar temple above it is painted in bold red and white stripes. The ghat is named after that temple, which is dedicated to Shiva and counted among Kashi's twelve jyotirlingas. Its lingam is a black stone with a white vein running through it, which tradition links to Kedarnath in the Himalayas.\n\nA small sacred pool called Gaurikund lies on the ghat's steps. The ghat is a working bathing ghat used mostly by local families and pilgrims, and it's noticeably calmer than Dashashwamedh on an ordinary day. It fills up during the month of Shravan (July–August), when Shiva devotees come in large numbers, and on eclipses, Nirjala Ekadashi and Ganga Dussehra.\n\nThe lanes behind it form Bengali Tola, an old neighbourhood with a strong Bengali heritage, sweet shops and small temples. Kedar sits between Assi and Dashashwamedh, so you can walk to it along the riverfront from either side or see it from a boat.\n\nFor match visitors, Kedar is a good quiet stop on a riverside walk the day before or after a game. It's about 17 km from the stadium at Ganjari by road.",
+  "sources": [
+    {
+      "label": "UP Tourism – Kedar Ghat",
+      "url": "https://uptourism.gov.in/en/article/kedar-ghat"
+    },
+    {
+      "label": "Varanasi district – Ganga Ghat",
+      "url": "https://varanasi.nic.in/tourist-place/ganga-ghat/"
+    }
+  ],
+  "updatedAt": "2026-10-25",
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "status": "published"
+}

@@ -1,0 +1,43 @@
+{
+  "type": "hotel",
+  "id": "sample-sample-rajatalab-highway-inn",
+  "slug": "sample-rajatalab-highway-inn",
+  "name": "Sample – Rajatalab Highway Inn",
+  "category": "hotel",
+  "area": "rajatalab",
+  "address": "NH-19, Rajatalab, Varanasi",
+  "pincode": "221311",
+  "geo": {
+    "lat": 25.2285,
+    "lng": 82.8705
+  },
+  "phone": [
+    "+910000000000"
+  ],
+  "whatsapp": "+910000000000",
+  "priceMin": 1500,
+  "priceMax": 3000,
+  "amenities": [
+    "ac",
+    "wifi"
+  ],
+  "acceptsForeigners": true,
+  "checkIn": "12:00",
+  "checkOut": "11:00",
+  "summary": "Fictional sample listing used only to preview the design in development. Delete before launch.",
+  "description": "This is a made-up listing so you can see how hotel pages look while developing. It is never published: the build refuses any listing tagged sample.",
+  "quickFacts": [
+    "Sample data — not a real business"
+  ],
+  "photos": [],
+  "tags": [
+    "sample"
+  ],
+  "verifiedAt": null,
+  "verificationMethod": null,
+  "ownerConsent": false,
+  "status": "draft",
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25"
+}

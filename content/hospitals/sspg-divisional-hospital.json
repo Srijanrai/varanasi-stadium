@@ -1,0 +1,28 @@
+{
+  "status": "draft",
+  "phone": [],
+  "photos": [],
+  "tags": [],
+  "quickFacts": [],
+  "verifiedAt": null,
+  "verificationMethod": null,
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "hospital",
+  "id": "h-divisional",
+  "slug": "sspg-divisional-hospital",
+  "name": "SSPG Divisional Hospital, Kabir Chaura",
+  "nameHi": "एसएसपीजी मंडलीय अस्पताल, कबीर चौरा",
+  "area": "kabir-chaura",
+  "address": "Kabir Chaura, Varanasi",
+  "pincode": "221001",
+  "geo": {
+    "lat": 25.3185,
+    "lng": 83.0035
+  },
+  "ownership": "government",
+  "summary": "The government divisional hospital in Kabir Chaura, close to the old city. OPD timings and emergency info.",
+  "description": "[VERIFY] official name, OPD timings, emergency. [ADD FIRST-HAND] practical tips."
+}

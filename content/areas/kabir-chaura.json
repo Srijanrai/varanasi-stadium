@@ -1,0 +1,11 @@
+{
+  "slug": "kabir-chaura",
+  "name": "Kabir Chaura",
+  "nameHi": "कबीर चौरा",
+  "summary": "An old neighbourhood with the divisional government hospital.",
+  "description": "An old neighbourhood with the divisional government hospital. [ADD FIRST-HAND: what this area is like, who should stay here, getting around.]",
+  "geo": {
+    "lat": 25.3185,
+    "lng": 83.0035
+  }
+}

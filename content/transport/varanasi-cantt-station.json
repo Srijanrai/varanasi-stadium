@@ -1,0 +1,60 @@
+{
+  "status": "published",
+  "phone": [],
+  "photos": [
+    {
+      "src": "/images/transport/varanasi-cantt-station/varanasi-cantt-station-1.jpg",
+      "alt": "Varanasi Junction (Cantt) railway station, Varanasi",
+      "credit": "Gannu03 / Wikimedia Commons",
+      "license": "cc-by-sa",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Varanasi_Junction_railway_station.jpg",
+      "width": 1280,
+      "height": 960
+    }
+  ],
+  "tags": [],
+  "quickFacts": [
+    "Station code: BSB",
+    "Railway enquiry: dial 139 (the district site still lists 135)",
+    "Direct trains to Delhi, Mumbai, Chennai and Howrah",
+    "About 15–18 km from the stadium at Ganjari by road"
+  ],
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "transport",
+  "id": "tr-cantt",
+  "slug": "varanasi-cantt-station",
+  "name": "Varanasi Junction (Cantt) railway station",
+  "nameHi": "वाराणसी जंक्शन (कैंट)",
+  "area": "cantt",
+  "address": "Cantonment, Varanasi",
+  "pincode": "221002",
+  "geo": {
+    "lat": 25.32694,
+    "lng": 82.98639
+  },
+  "mode": "railway",
+  "summary": "Varanasi's main railway station (code BSB), where most visitors arrive. Getting from here to the stadium, the ghats and the ropeway.",
+  "description": "Varanasi Junction, which everyone in the city simply calls Cantt, is the main railway station and the place most visitors first arrive. Its code is BSB, and it has direct trains to Delhi, Mumbai, Chennai and Howrah, among many others. The station was renamed from Banaras Cantt to Varanasi Junction in 1956, and it's on the Indian Railways list for redevelopment under the Amrit Bharat station scheme.\n\nFor match visitors, Cantt is the natural starting point. The stadium at Ganjari is roughly 15 to 18 km away by road, which usually means 40 minutes to an hour on a normal day; allow much longer on a match day. Take a cab, an app taxi or an auto from outside the main exit and head out towards the Ring Road and Rajatalab. Agree the fare before you set off.\n\nGoing the other way, into the old city and the ghats, the Kashi ropeway being built from Cantt to Godowlia will eventually make the trip much quicker. Until it opens, an auto or e-rickshaw to Godowlia is the usual option.\n\nCantt is also where many budget hotels and the main bus stand are, so it's a practical base if the cricket is the main reason for your trip.",
+  "operatingHours": "Open round the clock",
+  "sources": [
+    {
+      "label": "Varanasi district – How to reach",
+      "url": "https://varanasi.nic.in/how-to-reach/"
+    },
+    {
+      "label": "PIB – Amrit Bharat stations (8 Dec 2023)",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1983976"
+    },
+    {
+      "label": "NE Railway – Banaras (Manduadih) station note",
+      "url": "https://ner.indianrailways.gov.in/uploads/files/1603885223956-Manduadih.pdf"
+    }
+  ]
+}

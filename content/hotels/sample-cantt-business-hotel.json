@@ -1,0 +1,43 @@
+{
+  "type": "hotel",
+  "id": "sample-sample-cantt-business-hotel",
+  "slug": "sample-cantt-business-hotel",
+  "name": "Sample – Cantt Business Hotel",
+  "category": "hotel",
+  "area": "cantt",
+  "address": "Near Cantt station, Varanasi",
+  "pincode": "221002",
+  "geo": {
+    "lat": 25.3262,
+    "lng": 82.9852
+  },
+  "phone": [
+    "+910000000000"
+  ],
+  "whatsapp": "+910000000000",
+  "priceMin": 2000,
+  "priceMax": 4500,
+  "amenities": [
+    "ac",
+    "wifi"
+  ],
+  "acceptsForeigners": true,
+  "checkIn": "12:00",
+  "checkOut": "11:00",
+  "summary": "Fictional sample listing used only to preview the design in development. Delete before launch.",
+  "description": "This is a made-up listing so you can see how hotel pages look while developing. It is never published: the build refuses any listing tagged sample.",
+  "quickFacts": [
+    "Sample data — not a real business"
+  ],
+  "photos": [],
+  "tags": [
+    "sample"
+  ],
+  "verifiedAt": null,
+  "verificationMethod": null,
+  "ownerConsent": false,
+  "status": "draft",
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25"
+}

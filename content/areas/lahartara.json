@@ -1,0 +1,11 @@
+{
+  "slug": "lahartara",
+  "name": "Lahartara",
+  "nameHi": "लहरतारा",
+  "summary": "Area near Banaras station, home to the Mahamana cancer hospital.",
+  "description": "Area near Banaras station, home to the Mahamana cancer hospital. [ADD FIRST-HAND: what this area is like, who should stay here, getting around.]",
+  "geo": {
+    "lat": 25.3,
+    "lng": 82.967
+  }
+}

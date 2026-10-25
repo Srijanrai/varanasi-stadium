@@ -1,0 +1,62 @@
+{
+  "status": "published",
+  "phone": [
+    "+915422622155"
+  ],
+  "photos": [
+    {
+      "src": "/images/transport/varanasi-airport/varanasi-airport-1.jpg",
+      "alt": "Lal Bahadur Shastri International Airport, Varanasi",
+      "credit": "Ramón / Wikimedia Commons",
+      "license": "cc-by-sa",
+      "licenseName": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Airports_in_Uttar_Pradesh_Varanasi_Departure_Terminal.jpg",
+      "width": 1280,
+      "height": 960
+    }
+  ],
+  "tags": [],
+  "quickFacts": [
+    "Airport code: VNS",
+    "Run by the Airports Authority of India",
+    "About 22 km from the city centre",
+    "Roughly 20–25 km from the stadium at Ganjari by road"
+  ],
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "transport",
+  "id": "tr-airport",
+  "slug": "varanasi-airport",
+  "name": "Lal Bahadur Shastri International Airport",
+  "nameHi": "लाल बहादुर शास्त्री अंतरराष्ट्रीय हवाई अड्डा",
+  "area": "babatpur",
+  "address": "L.B.S.I. Airport, Babatpur, Varanasi",
+  "pincode": "221006",
+  "geo": {
+    "lat": 25.45222,
+    "lng": 82.85944
+  },
+  "mode": "airport",
+  "summary": "Varanasi's airport (VNS) at Babatpur, north-west of the city. Distances to the city and the stadium, and the planned expansion.",
+  "description": "Lal Bahadur Shastri International Airport, code VNS, is Varanasi's airport. It sits at Babatpur, north-west of the city, and is run by the Airports Authority of India. The district administration gives the distance to Varanasi as about 22 km, so plan on 45 minutes to an hour into the old city, depending on traffic.\n\nThe airport is getting a major upgrade. In June 2024 the Union Cabinet approved about ₹2,870 crore to expand it, including a new 75,000 square metre terminal, a runway extended to just over four kilometres and parking for 20 aircraft, raising capacity from 3.9 million to 9.9 million passengers a year. Expect some construction while the work goes on.\n\nFor match visitors, the airport is on the same western side of the city as the stadium, so you don't have to cross the crowded old city. On the map, Ganjari is roughly 20 to 25 km away by road. Book a cab at arrivals or use an app taxi, and allow extra time on match days.\n\nIf you're flying in for a day trip to a match, a common plan is to go straight to the stadium area and visit the ghats on the following day.",
+  "website": "https://www.aai.aero/en/airports/varanasi",
+  "sources": [
+    {
+      "label": "AAI – Varanasi airport",
+      "url": "https://www.aai.aero/en/airports/varanasi"
+    },
+    {
+      "label": "PIB – Varanasi airport expansion approved (19 Jun 2024)",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2026702"
+    },
+    {
+      "label": "Varanasi district – How to reach",
+      "url": "https://varanasi.nic.in/how-to-reach/"
+    }
+  ]
+}

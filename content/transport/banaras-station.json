@@ -1,0 +1,60 @@
+{
+  "status": "published",
+  "phone": [],
+  "photos": [
+    {
+      "src": "/images/transport/banaras-station/banaras-station-manduadih-1.jpg",
+      "alt": "Banaras railway station (Manduadih), Varanasi",
+      "credit": "Monsieurupanshu / Wikimedia Commons",
+      "license": "cc-by-sa",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manduadih_Railway_Station_at_night.jpg",
+      "width": 1280,
+      "height": 802
+    }
+  ],
+  "tags": [],
+  "quickFacts": [
+    "Station code: BSBS (formerly MUV, Manduadih)",
+    "Renamed Banaras in July 2021",
+    "About 3 km south-west of Varanasi Junction",
+    "Slightly closer to Ganjari than Cantt"
+  ],
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "transport",
+  "id": "tr-banaras",
+  "slug": "banaras-station",
+  "name": "Banaras railway station (Manduadih)",
+  "nameHi": "बनारस रेलवे स्टेशन (मंडुआडीह)",
+  "area": "lahartara",
+  "address": "Manduadih, Varanasi",
+  "pincode": "221103",
+  "geo": {
+    "lat": 25.29924,
+    "lng": 82.97105
+  },
+  "mode": "railway",
+  "summary": "The renovated Banaras station (code BSBS), formerly Manduadih. Slightly closer to the stadium side of the city than Cantt.",
+  "description": "Banaras station is the city's second major railway station, and many people still know it by its old name, Manduadih. It was renamed Banaras, with the new code BSBS, in July 2021. It sits about three kilometres south-west of Varanasi Junction, on the line towards Prayagraj, and it began life as a small metre-gauge station back in 1906.\n\nThe station was rebuilt and expanded around 2019. North Eastern Railway's own note on the project lists the platforms going up from three to eight, plus retiring rooms, dormitories, an AC lounge, an escalator, a lift and Wi-Fi. It's also on the Amrit Bharat station redevelopment list, so expect more changes. Check what's currently available when you arrive, as facilities lists date quickly.\n\nFor cricket fans, Banaras is worth knowing about because it sits on the side of the city facing Ganjari. Measured on the map, it's a little closer to the stadium than Cantt, so if your train stops here it may save you some time on match day. Fewer long-distance trains use it than Cantt, though, so check your ticket.\n\nCabs and autos wait outside. Agree the fare before you set off towards the Ring Road and Rajatalab.",
+  "operatingHours": "Open round the clock",
+  "sources": [
+    {
+      "label": "NE Railway – Banaras (Manduadih) station note",
+      "url": "https://ner.indianrailways.gov.in/uploads/files/1603885223956-Manduadih.pdf"
+    },
+    {
+      "label": "Eastern Railway – Manduadih renamed Banaras (2021)",
+      "url": "https://er.indianrailways.gov.in/view_detail.jsp?lang=0&id=0%2C4%2C268&dcd=3978&did=1626781873063D02991D1216454930840CA30EDFE45F8"
+    },
+    {
+      "label": "PIB – Amrit Bharat stations (8 Dec 2023)",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1983976"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "status": "published",
+  "phone": [],
+  "photos": [
+    {
+      "src": "/images/ghats/dashashwamedh-ghat/dashashwamedh-ghat-1.jpg",
+      "alt": "Dashashwamedh Ghat, Varanasi",
+      "credit": "Prashant Kharote / Wikimedia Commons",
+      "license": "cc-by",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dashashwamedh_Ghat_in_Varanasi,_Uttar_Pradesh.jpg",
+      "width": 1280,
+      "height": 610
+    }
+  ],
+  "tags": [],
+  "quickFacts": [
+    "Evening Ganga aarti every day, timed to sunset",
+    "Watch from the steps or from a boat on the river",
+    "Open round the clock",
+    "Packed on festivals, especially Dev Deepawali"
+  ],
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "ghat",
+  "id": "g-dashashwamedh",
+  "slug": "dashashwamedh-ghat",
+  "name": "Dashashwamedh Ghat",
+  "nameHi": "दशाश्वमेध घाट",
+  "area": "dashashwamedh",
+  "address": "Dashashwamedh, Varanasi",
+  "pincode": "221001",
+  "geo": {
+    "lat": 25.30717,
+    "lng": 83.01034
+  },
+  "activities": [
+    "aarti",
+    "boat-ride",
+    "bathing"
+  ],
+  "boatsAvailable": true,
+  "summary": "The busiest ghat in Varanasi and home of the famous evening Ganga aarti. When it starts, where to watch from, and boats.",
+  "description": "If you only see one ghat in Varanasi, it will probably be Dashashwamedh. It's the busiest ghat on the river, and every evening it hosts the Ganga aarti that most visitors come to Kashi for: rows of priests in matching robes swing tall brass lamps in time with chants, bells and conch shells while thousands watch.\n\nUP Tourism gives the aarti as running roughly from 6 to 7 pm, timed to sunset, so it moves a little earlier in winter. Arrive at least 45 minutes early if you want a spot on the steps. Many people prefer to watch from a boat moored just off the bank, which gives a clearer view of the whole line of priests; agree the boat fare before you get in.\n\nThe ghat's name comes from the legend that Lord Brahma performed ten horse sacrifices here. Bajirao Peshwa had it rebuilt in stone in 1735, and today more people bathe here than at any other ghat. It's also one of the five stops on the traditional Panchatirthi pilgrimage.\n\nIt's about 18 km from the stadium at Ganjari by road and right next to Kashi Vishwanath, so an evening here suits the day before or after a match rather than match day itself. On festivals such as Dev Deepawali, expect very heavy crowds.",
+  "aarti": [
+    {
+      "name": "Evening Ganga Aarti",
+      "time": "around 6:00–7:00 pm",
+      "note": "timed to sunset, so it shifts with the season"
+    }
+  ],
+  "sources": [
+    {
+      "label": "UP Tourism – Dashashwamedh Ghat",
+      "url": "https://uptourism.gov.in/en/article/dashashwamedha-ghat"
+    },
+    {
+      "label": "Incredible India – Dashashwamedh Ghat",
+      "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/dashashwamedh-ghat"
+    },
+    {
+      "label": "UP Tourism – River front ghats",
+      "url": "https://uptourism.gov.in/en/article/river-front-ghats"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+[
+  {
+    "id": "cantt",
+    "name": "Varanasi Cantt station",
+    "nameHi": "वाराणसी कैंट स्टेशन",
+    "geo": { "lat": 25.327, "lng": 82.987 },
+    "roadKm": null,
+    "normalMinutes": null,
+    "fare": null,
+    "bestOption": "Cab or app taxi from the station's pre-paid stand",
+    "steps": [
+      "Take a cab or auto from outside the main exit.",
+      "Head towards the Ring Road / Rajatalab side.",
+      "Follow signs for Ganjari as you get close."
+    ],
+    "tip": null,
+    "lastChecked": null
+  },
+  {
+    "id": "ghats",
+    "name": "Godowlia / Dashashwamedh (the ghats)",
+    "nameHi": "गोदौलिया / दशाश्वमेध",
+    "geo": { "lat": 25.309, "lng": 83.006 },
+    "roadKm": null,
+    "normalMinutes": null,
+    "fare": null,
+    "bestOption": "Walk or e-rickshaw to the main road, then a cab",
+    "steps": [
+      "Cars can't get into the lanes near the ghats — walk or take an e-rickshaw out to the main road first.",
+      "Take a cab from there towards Rajatalab.",
+      "Allow extra time to get out of the old city traffic."
+    ],
+    "tip": null,
+    "lastChecked": null
+  },
+  {
+    "id": "assi",
+    "name": "Assi Ghat",
+    "nameHi": "अस्सी घाट",
+    "geo": { "lat": 25.2867, "lng": 83.0068 },
+    "roadKm": null,
+    "normalMinutes": null,
+    "fare": null,
+    "bestOption": "Cab from Assi crossing",
+    "steps": ["Walk up to Assi crossing.", "Take a cab towards Rajatalab via the Ring Road."],
+    "tip": null,
+    "lastChecked": null
+  },
+  {
+    "id": "bhu",
+    "name": "BHU / Lanka",
+    "nameHi": "बीएचयू / लंका",
+    "geo": { "lat": 25.2677, "lng": 82.9913 },
+    "roadKm": null,
+    "normalMinutes": null,
+    "fare": null,
+    "bestOption": "Cab or shared auto towards Rajatalab",
+    "steps": ["Start from Lanka gate.", "Head west towards the Ring Road and Rajatalab."],
+    "tip": null,
+    "lastChecked": null
+  },
+  {
+    "id": "airport",
+    "name": "Varanasi airport (Babatpur)",
+    "nameHi": "बाबतपुर एयरपोर्ट",
+    "geo": { "lat": 25.4524, "lng": 82.8593 },
+    "roadKm": null,
+    "normalMinutes": null,
+    "fare": null,
+    "bestOption": "Pre-paid or app taxi from the airport",
+    "steps": ["Book a cab at the arrivals area.", "Ask for the Ring Road route to Rajatalab / Ganjari."],
+    "tip": null,
+    "lastChecked": null
+  }
+]

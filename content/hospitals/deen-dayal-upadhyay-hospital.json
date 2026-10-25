@@ -1,0 +1,35 @@
+{
+  "type": "hospital",
+  "phone": [
+    "+915422508017"
+  ],
+  "tags": [],
+  "quickFacts": [],
+  "photos": [],
+  "specialties": [],
+  "opdTimings": [],
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "id": "h-ddu",
+  "slug": "deen-dayal-upadhyay-hospital",
+  "name": "Pandit Deen Dayal Upadhyay Government Hospital",
+  "area": "cantt",
+  "address": "Pandeypur, Varanasi",
+  "pincode": "221002",
+  "geo": {
+    "lat": 25.35118,
+    "lng": 82.98561
+  },
+  "ownership": "government",
+  "summary": "UP government hospital in Pandeypur, north of Cantt. Contact details from the Varanasi district directory.",
+  "description": "Official facts gathered (publish once a photo and current details are confirmed): UP government hospital in Pandeypur; phone 0542-2508017 per the district directory (entry dated 2018). [VERIFY] pincode, phone, OPD timings. [ADD FIRST-HAND] photo.",
+  "sources": [
+    {
+      "label": "Varanasi district – Pandit Deen Dayal Upadhyaya Hospital",
+      "url": "https://varanasi.nic.in/public-utility/pandit-deen-dayal-upadhyaya-hospital/"
+    }
+  ],
+  "status": "draft",
+  "updatedAt": "2026-10-25"
+}

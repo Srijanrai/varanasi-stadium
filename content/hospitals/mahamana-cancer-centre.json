@@ -1,0 +1,43 @@
+{
+  "status": "draft",
+  "phone": [
+    "+915426917700"
+  ],
+  "photos": [],
+  "tags": [],
+  "quickFacts": [],
+  "verifiedAt": null,
+  "verificationMethod": null,
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "hospital",
+  "id": "h-mpmmcc",
+  "slug": "mahamana-cancer-centre",
+  "name": "Mahamana Pandit Madan Mohan Malaviya Cancer Centre",
+  "nameHi": "महामना पं. मदन मोहन मालवीय कैंसर केंद्र",
+  "area": "lanka",
+  "address": "Sundar Bagiya, near Nariya Gate, BHU Campus, Varanasi",
+  "pincode": "221005",
+  "geo": {
+    "lat": 25.2635,
+    "lng": 82.9925
+  },
+  "ownership": "government",
+  "summary": "Tata Memorial Centre cancer hospital on the BHU campus near Nariya Gate. Services, contacts and how it works with Homi Bhabha hospital.",
+  "description": "Official facts gathered (publish once a photo and verified coordinates are added): Tata Memorial Centre unit under the Department of Atomic Energy; on the BHU campus near Nariya Gate (not Lahartara); opened 19 Feb 2019 with 352 beds; services include surgical, medical, radiation, paediatric and palliative oncology and bone marrow transplant; phone +91-542-6917700. Sources: mpmmcc.tmc.gov.in. [VERIFY] map pin near Nariya Gate. [ADD FIRST-HAND] photo of the building.",
+  "specialties": [],
+  "opdTimings": [],
+  "website": "https://mpmmcc.tmc.gov.in/",
+  "sources": [
+    {
+      "label": "MPMMCC – Contact",
+      "url": "https://mpmmcc.tmc.gov.in/contact"
+    },
+    {
+      "label": "MPMMCC – About",
+      "url": "https://mpmmcc.tmc.gov.in/about"
+    }
+  ]
+}

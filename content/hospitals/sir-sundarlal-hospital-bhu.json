@@ -1,0 +1,76 @@
+{
+  "status": "published",
+  "phone": [
+    "+915422369033"
+  ],
+  "photos": [
+    {
+      "src": "/images/hospitals/sir-sundarlal-hospital-bhu/sir-sundarlal-hospital-bhu-1.jpg",
+      "alt": "Sir Sundarlal Hospital building, BHU, Varanasi",
+      "credit": "User4edits / Wikimedia Commons",
+      "license": "cc-by-sa",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sir_Sunderlal_Hospital_(SSH)_Banaras_Hindu_University_(BHU).jpg",
+      "width": 1280,
+      "height": 960
+    }
+  ],
+  "tags": [],
+  "quickFacts": [
+    "OPD runs Monday to Saturday by department",
+    "Book an OPD slot online at bhuopd.com, or at the counter",
+    "The Trauma Centre on campus handles 24-hour emergencies",
+    "Modern medicine and Ayurveda under one roof"
+  ],
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "hospital",
+  "id": "h-ssh-bhu",
+  "slug": "sir-sundarlal-hospital-bhu",
+  "name": "Sir Sundarlal Hospital, BHU",
+  "nameHi": "सर सुंदरलाल अस्पताल, बीएचयू",
+  "area": "lanka",
+  "address": "Sir Sunderlal Hospital, Banaras Hindu University, Varanasi",
+  "pincode": "221005",
+  "geo": {
+    "lat": 25.2767,
+    "lng": 82.9998
+  },
+  "ownership": "government",
+  "summary": "BHU's large teaching hospital, serving eastern UP, Bihar and Nepal. How OPD registration works, contacts and practical tips.",
+  "description": "Sir Sundarlal Hospital is the teaching hospital of the Institute of Medical Sciences at Banaras Hindu University, and for many families in eastern Uttar Pradesh, western Bihar and Nepal it's where serious treatment happens. It began in 1924 as a 96-bed hospital, named after Sir Sundarlal, BHU's first Vice-Chancellor, and has grown into one of the largest hospitals in north India. It's unusual in offering both modern medicine and Ayurveda in the same place.\n\nOutpatient clinics run Monday to Saturday, with each department keeping its own days and hours. The schedule changes, so check the current OPD roster on the BHU website before you travel. You can book an OPD appointment online through bhuopd.com or register at the counter on the day. For accidents and emergencies, go to the separate Trauma Centre on the BHU campus, which runs round the clock.\n\nThe hospital is inside the BHU campus, a short ride from Lanka gate. Arrive early: OPD queues build up fast, especially on Mondays. Families staying for several days usually look for rooms around Lanka and the BHU gates.\n\nIf you're in Varanasi for a match and need care, BHU is on the same side of the city as the stadium at Ganjari, about 16 km away by road.",
+  "specialties": [
+    "General medicine and surgery",
+    "Gastroenterology",
+    "Gynaecology",
+    "TB & chest",
+    "Geriatrics",
+    "Radiotherapy",
+    "Ayurveda"
+  ],
+  "opdTimings": [
+    {
+      "days": "Monday – Saturday",
+      "hours": "Department-wise roster; check the current OPD schedule on bhu.ac.in"
+    }
+  ],
+  "sources": [
+    {
+      "label": "BHU – RTI Manual XV (Sir Sunderlal Hospital)",
+      "url": "https://www.bhu.ac.in/Images/files/Manual-15(1).pdf"
+    },
+    {
+      "label": "BHU – OPD schedule",
+      "url": "https://www.bhu.ac.in/SiteAttachments/OPD%20(Schedule)202621316474037.pdf"
+    },
+    {
+      "label": "BHU – PG Bulletin 2024",
+      "url": "https://bhu.ac.in/Images/files/PG%20Bulletin%202024.pdf"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "hotel",
+  "id": "sample-sample-ganga-view-guest-house",
+  "slug": "sample-ganga-view-guest-house",
+  "name": "Sample – Ganga View Guest House",
+  "category": "guest-house",
+  "area": "assi",
+  "address": "Assi, Varanasi",
+  "pincode": "221005",
+  "geo": {
+    "lat": 25.2873,
+    "lng": 83.0061
+  },
+  "phone": [
+    "+910000000000"
+  ],
+  "whatsapp": "+910000000000",
+  "priceMin": 900,
+  "priceMax": 2200,
+  "amenities": [
+    "ac",
+    "wifi"
+  ],
+  "acceptsForeigners": true,
+  "checkIn": "12:00",
+  "checkOut": "11:00",
+  "summary": "Fictional sample listing used only to preview the design in development. Delete before launch.",
+  "description": "This is a made-up listing so you can see how hotel pages look while developing. It is never published: the build refuses any listing tagged sample.",
+  "quickFacts": [
+    "Sample data — not a real business"
+  ],
+  "photos": [],
+  "tags": [
+    "sample"
+  ],
+  "verifiedAt": null,
+  "verificationMethod": null,
+  "ownerConsent": false,
+  "status": "draft",
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25"
+}

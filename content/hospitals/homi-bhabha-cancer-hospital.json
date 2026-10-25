@@ -1,0 +1,41 @@
+{
+  "type": "hospital",
+  "phone": [
+    "+915422517699"
+  ],
+  "tags": [],
+  "quickFacts": [],
+  "photos": [],
+  "specialties": [],
+  "opdTimings": [],
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "id": "h-hbch",
+  "slug": "homi-bhabha-cancer-hospital",
+  "name": "Homi Bhabha Cancer Hospital, Varanasi",
+  "nameHi": "होमी भाभा कैंसर अस्पताल",
+  "area": "lahartara",
+  "address": "Old Loco Colony, Shivpurwa, Varanasi",
+  "pincode": "221002",
+  "geo": {
+    "lat": 25.31954,
+    "lng": 82.97992
+  },
+  "ownership": "government",
+  "website": "https://mpmmcc.tmc.gov.in/",
+  "summary": "Tata Memorial Centre cancer hospital near Varanasi Cantt, the sister unit of the Mahamana cancer centre at BHU.",
+  "description": "Official facts gathered (publish once a photo is added): Tata Memorial Centre / DAE unit; formerly the Indian Railway Cancer Hospital; running since 1 May 2018 with 179 beds; near Varanasi Cantt station; works with MPMMCC under one Director; phone (0542) 2517699. Sources: mpmmcc.tmc.gov.in, tmc.gov.in. [ADD FIRST-HAND] photo of the building.",
+  "sources": [
+    {
+      "label": "MPMMCC/HBCH – About",
+      "url": "https://mpmmcc.tmc.gov.in/about"
+    },
+    {
+      "label": "TMC – Contact us",
+      "url": "https://tmc.gov.in/contactus"
+    }
+  ],
+  "status": "draft",
+  "updatedAt": "2026-10-25"
+}

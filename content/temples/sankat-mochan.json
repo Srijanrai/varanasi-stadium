@@ -1,0 +1,59 @@
+{
+  "status": "published",
+  "phone": [],
+  "photos": [
+    {
+      "src": "/images/temples/sankat-mochan/sankat-mochan-temple-1.jpg",
+      "alt": "Sankat Mochan Hanuman Temple, Varanasi",
+      "credit": "Vinayaraj / Wikimedia Commons",
+      "license": "cc-by-sa",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sankat_Mochan_temple_entrance,_Varanasi_-_IRCTC_2017.jpg",
+      "width": 1280,
+      "height": 960
+    }
+  ],
+  "tags": [],
+  "quickFacts": [
+    "Busiest on Tuesdays and Saturdays",
+    "Besan laddoo is the traditional prasad",
+    "The Sankat Mochan Sangeet Samaroh music festival is held every April",
+    "About 2 km from BHU's main gate"
+  ],
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "temple",
+  "id": "t-sankat-mochan",
+  "slug": "sankat-mochan",
+  "name": "Sankat Mochan Hanuman Temple",
+  "nameHi": "संकट मोचन हनुमान मंदिर",
+  "area": "durgakund",
+  "address": "Sankat Mochan Road, Saket Nagar, Varanasi",
+  "pincode": "221005",
+  "geo": {
+    "lat": 25.2858,
+    "lng": 82.9988
+  },
+  "deity": "Lord Hanuman",
+  "summary": "Tulsidas-linked Hanuman temple near BHU, known for besan laddoo prasad and big Tuesday and Saturday crowds. Timings and tips.",
+  "description": "Sankat Mochan is the Hanuman temple that people in Banaras visit when they want obstacles out of the way, and the name itself means \"reliever of troubles\". Tradition links it to Goswami Tulsidas, the poet who wrote the Ramcharitmanas, who is said to have had a vision of Hanuman here in the 16th century. The idol faces Lord Rama, whom Hanuman served.\n\nIt sits in a leafy compound on the road between Durgakund and BHU, a short ride from Assi Ghat. Tuesdays and Saturdays, the days devoted to Hanuman, bring long queues, special aarti and a lot of Hanuman Chalisa being sung, so go on another day if you want a quieter visit. Besan laddoo is the prasad to buy at the gate.\n\nIf you're in Varanasi in April, the temple's Sankat Mochan Sangeet Samaroh brings some of India's best classical musicians and dancers here for several nights, usually free to attend.\n\nThe Government of India's tourism portal lists the temple as open from 5 am to 10 pm. Timings can change on festival days such as Hanuman Jayanti, so check locally before you go.\n\nFor a match day, Sankat Mochan pairs well with Durga Kund, which is a few minutes away. Both are on the BHU side of the city, which is a little closer to the stadium at Ganjari than the old city near the ghats.",
+  "openingHours": [
+    {
+      "name": "Open",
+      "time": "5:00 am – 10:00 pm",
+      "note": "as listed by the Govt of India tourism portal"
+    }
+  ],
+  "aartiTimings": [],
+  "sources": [
+    {
+      "label": "Incredible India – Sankat Mochan Temple",
+      "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/sankat-mochan-temple"
+    }
+  ]
+}

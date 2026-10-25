@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "src": "/images/site/hero/varanasi-ghats-at-dusk-1.jpg",
+    "alt": "The ghats of Varanasi lit up at dusk, with boats on the Ganga",
+    "credit": "Goutam1962 / Wikimedia Commons",
+    "license": "cc-by-sa",
+    "licenseName": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghats_of_Varanasi_During_Dusk_99.jpg",
+    "width": 1920,
+    "height": 1080,
+    "edited": "Colour-graded and cropped"
+  },
+  "aarti": {
+    "src": "/images/site/aarti/evening-ganga-aarti-dashashwamedh-1.jpg",
+    "alt": "Priests performing the evening Ganga aarti with lamps at Dashashwamedh Ghat",
+    "credit": "AKS.9955 / Wikimedia Commons",
+    "license": "cc-by-sa",
+    "licenseName": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Evening_Ganga_Aarti_at_Dashashwamedh_Ghat.JPG",
+    "width": 1920,
+    "height": 1280
+  },
+  "stadium": {
+    "src": "/images/site/stadium/varanasi-stadium-design-render-exterior.png",
+    "alt": "Planned design of the Varanasi International Cricket Stadium at sunset, with trishul-shaped floodlights and a crescent roof",
+    "credit": "Official planned design of the Varanasi International Cricket Stadium (not a photo). All rights belong to its owners.",
+    "license": "official-render",
+    "width": 1236,
+    "height": 693
+  },
+  "stadiumMobile": {
+    "src": "/images/site/stadium/varanasi-stadium-design-render-interior.png",
+    "alt": "Planned design of the inside of the Varanasi International Cricket Stadium full of spectators",
+    "credit": "Official planned design of the Varanasi International Cricket Stadium (not a photo). All rights belong to its owners.",
+    "license": "official-render",
+    "width": 1235,
+    "height": 693
+  }
+}

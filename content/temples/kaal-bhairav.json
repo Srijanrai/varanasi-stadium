@@ -1,0 +1,47 @@
+{
+  "status": "draft",
+  "phone": [],
+  "photos": [],
+  "tags": [],
+  "quickFacts": [
+    "Known as the Kotwal (guardian) of Kashi",
+    "Busiest on Tuesdays and Sundays",
+    "Many pilgrims tie a black protective thread (Raksha Sutra) here",
+    "Reached through narrow lanes, so go on foot or by e-rickshaw"
+  ],
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "temple",
+  "id": "t-kaal-bhairav",
+  "slug": "kaal-bhairav",
+  "name": "Kaal Bhairav Temple",
+  "nameHi": "काल भैरव मंदिर",
+  "area": "kotwali",
+  "address": "Bhaironath, Vishweshwarganj, Varanasi",
+  "pincode": "221001",
+  "geo": {
+    "lat": 25.3196,
+    "lng": 83.0128
+  },
+  "deity": "Kaal Bhairav",
+  "summary": "Temple of Kaal Bhairav, the 'Kotwal' or guardian of Kashi, in the Vishweshwarganj lanes. Timings, offerings and when to go.",
+  "description": "Kaal Bhairav is a fierce form of Lord Shiva, and in Varanasi he has a special job: he is the Kotwal, the city's guardian. Many pilgrims believe you need his blessing to stay in Kashi, which is why a visit here is often paired with darshan at Kashi Vishwanath. The temple is mentioned in old texts such as the Skanda Purana.\n\nThe temple sits in the busy lanes of Vishweshwarganj, north of the main ghats. Inside, you'll see only the silver face of the deity through the sanctum door; the rest of the image is covered in cloth and garlands. Devotees offer oil, black sesame and flowers, and many tie a black protective thread, the Bhairav Raksha Sutra, on the wrist before they leave.\n\nTuesdays and Sundays are the busiest days, along with festivals such as Bhairav Ashtami and Mahashivratri. Early mornings and late evenings are calmer. The Government of India's tourism portal gives the hours as roughly 5 am to 10 pm, with possible short closures around midday.\n\nThe lanes are too narrow for cars, so walk or take an e-rickshaw from the main road. It's on the opposite side of the city from the stadium at Ganjari, so visit on a non-match day or well before you set out.",
+  "openingHours": [
+    {
+      "name": "Open",
+      "time": "5:00 am – about 10:00 pm",
+      "note": "may close briefly around midday"
+    }
+  ],
+  "aartiTimings": [],
+  "sources": [
+    {
+      "label": "Incredible India – Kaal Bhairav Temple",
+      "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/kaal-bhairav-temple"
+    }
+  ]
+}

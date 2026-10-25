@@ -1,0 +1,11 @@
+{
+  "slug": "godowlia",
+  "name": "Godowlia",
+  "nameHi": "गोदौलिया",
+  "summary": "The crowded market crossing at the edge of the old city, and the end point of the Kashi ropeway.",
+  "description": "The crowded market crossing at the edge of the old city, and the end point of the Kashi ropeway. [ADD FIRST-HAND: what this area is like, who should stay here, getting around.]",
+  "geo": {
+    "lat": 25.309,
+    "lng": 83.006
+  }
+}

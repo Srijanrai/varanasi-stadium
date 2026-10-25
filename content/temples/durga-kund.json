@@ -1,0 +1,63 @@
+{
+  "status": "published",
+  "phone": [],
+  "photos": [
+    {
+      "src": "/images/temples/durga-kund/durga-kund-temple-1.jpg",
+      "alt": "Durga Kund Temple, Varanasi",
+      "credit": "Hiroki Ogawa / Wikimedia Commons",
+      "license": "cc-by",
+      "licenseName": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Durga_Temple_Durga_Kund_Varanasi_India_-_panoramio.jpg",
+      "width": 1280,
+      "height": 960
+    }
+  ],
+  "tags": [],
+  "quickFacts": [
+    "Closed between noon and 4 pm",
+    "Busiest during Navratri",
+    "Watch your bags and snacks: the temple is famous for its monkeys",
+    "A few minutes from Sankat Mochan"
+  ],
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "temple",
+  "id": "t-durga-kund",
+  "slug": "durga-kund",
+  "name": "Durga Kund Temple",
+  "nameHi": "दुर्गा कुंड मंदिर",
+  "area": "durgakund",
+  "address": "Durgakund Road, Varanasi",
+  "pincode": "221005",
+  "geo": {
+    "lat": 25.288,
+    "lng": 83.003
+  },
+  "deity": "Goddess Durga",
+  "summary": "The red Durga temple beside a large stone tank, built in the 18th century. Opening hours, Navratri crowds and the resident monkeys.",
+  "description": "The Durga temple is hard to miss: a deep-red building with a tall, layered spire, standing beside a large rectangular stone tank called Durga Kund, which gives the temple and the whole neighbourhood its name. It was built in the 18th century by Rani Bhabani, a queen from Bengal, and is dedicated to Goddess Durga, regarded as one of the guardians of Varanasi. Shrines to Lakshmi, Saraswati and Kali stand inside the same compound.\n\nThe temple keeps two sets of hours: 5 am to noon and 4 pm to 9 pm, according to the Government of India's tourism portal. It shuts in the afternoon, which catches out a lot of visitors, so plan around that gap. During Navratri the crowds are huge and the temple is beautifully decorated; on Nag Panchami the tank becomes the setting for a scene of Vishnu resting on the serpent.\n\nIt's sometimes called the \"monkey temple\" for good reason. Keep food out of sight and hold on to your glasses and phone.\n\nDurga Kund is a few minutes from Sankat Mochan and on the way to Assi Ghat, so the three make an easy half-day loop. If you're heading to an evening match at Ganjari, a morning visit here leaves plenty of time to get across the city.",
+  "openingHours": [
+    {
+      "name": "Morning",
+      "time": "5:00 am – 12:00 pm"
+    },
+    {
+      "name": "Evening",
+      "time": "4:00 – 9:00 pm",
+      "note": "closed in the afternoon"
+    }
+  ],
+  "aartiTimings": [],
+  "sources": [
+    {
+      "label": "Incredible India – Durga Temple",
+      "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/durga-temple"
+    }
+  ]
+}

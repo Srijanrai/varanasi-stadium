@@ -1,0 +1,64 @@
+{
+  "status": "published",
+  "phone": [],
+  "photos": [
+    {
+      "src": "/images/ghats/manikarnika-ghat/manikarnika-ghat-1.jpg",
+      "alt": "Manikarnika Ghat, Varanasi",
+      "credit": "Gannu03 / Wikimedia Commons",
+      "license": "cc-by-sa",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manikarnika_Ghat_3.jpg",
+      "width": 1280,
+      "height": 1707
+    }
+  ],
+  "tags": [],
+  "quickFacts": [
+    "Cremations take place almost round the clock",
+    "Do not photograph cremations or mourners",
+    "The northern side is for bathing, the southern side for cremations",
+    "Many visitors see it respectfully from a boat"
+  ],
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "type": "ghat",
+  "id": "g-manikarnika",
+  "slug": "manikarnika-ghat",
+  "name": "Manikarnika Ghat",
+  "nameHi": "मणिकर्णिका घाट",
+  "area": "dashashwamedh",
+  "address": "Manikarnika, Varanasi",
+  "pincode": "221001",
+  "geo": {
+    "lat": 25.31087,
+    "lng": 83.01409
+  },
+  "activities": [
+    "cremation-site",
+    "bathing"
+  ],
+  "boatsAvailable": true,
+  "summary": "Varanasi's main cremation ghat, one of the holiest in Hinduism. What to expect, the history, and how to visit respectfully.",
+  "description": "Manikarnika is the most important cremation ground in Varanasi, and one of the holiest in Hinduism. Many Hindus believe that being cremated here brings release from the cycle of rebirth, which is why families bring their dead from across India. Cremations go on almost round the clock, and the smoke and firewood stacks are visible from far along the river.\n\nThe ghat takes its name from the Manikarnika Kund, a sacred pool linked to the legend of a jewelled earring of Goddess Parvati falling into it. The kund is cleared out every year after the monsoon floods, and Vishnu's footprints are set in marble on its bank. Strictly speaking, the cremations happen on the adjoining Jalasi Ghat, where a temple built by Ahilya Bai Holkar in the 18th century is blackened by smoke. The northern part of Manikarnika is used for bathing.\n\nPlease visit with respect. UP Tourism notes that photography at the cremation ground is strictly taboo, so keep your camera and phone away from the pyres and the families. People who offer to \"show you around\" and then ask for money for wood are a well-known nuisance; you don't need a guide.\n\nMany visitors choose to see Manikarnika quietly from a boat on a morning or evening ride. It sits between Dashashwamedh and Scindia ghats.",
+  "aarti": [],
+  "sources": [
+    {
+      "label": "UP Tourism – Manikarnika Ghat",
+      "url": "https://uptourism.gov.in/en/article/manikarnika-ghat"
+    },
+    {
+      "label": "Incredible India – Manikarnika Ghat",
+      "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/manikarnika-ghat"
+    },
+    {
+      "label": "UP Tourism – Dos and don'ts",
+      "url": "https://uptourism.gov.in/en/page/dos-and-dont"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "type": "temple",
+  "phone": [],
+  "tags": [],
+  "ownerConsent": false,
+  "featured": false,
+  "createdAt": "2026-10-25",
+  "updatedAt": "2026-10-25",
+  "verifiedAt": "2026-10-25",
+  "verificationMethod": "official-source",
+  "status": "published",
+  "id": "t-bharat-mata",
+  "slug": "bharat-mata-mandir",
+  "name": "Bharat Mata Mandir",
+  "nameHi": "भारत माता मंदिर",
+  "area": "sigra",
+  "address": "Mahatma Gandhi Kashi Vidyapith campus, Varanasi",
+  "pincode": "221002",
+  "geo": {
+    "lat": 25.317209,
+    "lng": 82.989291
+  },
+  "deity": "Bharat Mata (Mother India)",
+  "summary": "A temple to Mother India with a giant marble relief map instead of an idol. Opened by Mahatma Gandhi in 1936, close to Cantt.",
+  "openingHours": [
+    {
+      "name": "Open",
+      "time": "8:00 am – 5:30 pm",
+      "note": "as listed by the Govt of India tourism portal"
+    }
+  ],
+  "aartiTimings": [],
+  "quickFacts": [
+    "Opened by Mahatma Gandhi in 1936",
+    "A relief map of undivided India carved from Makrana marble",
+    "No idol: the map itself is the centrepiece",
+    "About 2 km from Cantt station"
+  ],
+  "photos": [
+    {
+      "src": "/images/temples/bharat-mata-mandir/bharat-mata-mandir-1.jpg",
+      "alt": "Bharat Mata Mandir, Varanasi",
+      "credit": "Hiroki Ogawa / Wikimedia Commons",
+      "license": "cc-by",
+      "licenseName": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bharat_Mata_Mandir_Varanasi_India_-_panoramio_(3).jpg",
+      "width": 1280,
+      "height": 960
+    }
+  ],
+  "description": "Bharat Mata Mandir is unlike any other temple in Varanasi: there is no idol inside. Instead, the floor holds a huge relief map of undivided India carved from Makrana marble, nearly ten metres across, with mountains, rivers and plains raised to scale. It is dedicated to Bharat Mata, Mother India.\n\nThe temple was a gift from the nationalists Babu Shiv Prasad Gupta and Durga Prasad Khatri, and Mahatma Gandhi inaugurated it in 1936, at the height of the independence movement. A poem by Maithili Sharan Gupt written for the opening is displayed inside. Standing over the map, you can trace the Ganga from the Himalayas all the way down to the Bay of Bengal.\n\nIt stands in the grounds of Mahatma Gandhi Kashi Vidyapith, in the Sigra area. The Government of India's tourism portal lists it as open from 8 am to 5:30 pm, so it suits a daytime visit rather than an evening one.\n\nBecause it's only about two kilometres from Cantt station, it's an easy stop on arrival or on your way out to the stadium at Ganjari. Allow 30 to 45 minutes. It's especially good with children, who tend to enjoy finding places on the map.",
+  "sources": [
+    {
+      "label": "Incredible India – Bharat Mata Temple",
+      "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/bharat-mata-temple"
+    },
+    {
+      "label": "Varanasi district – Temples of importance",
+      "url": "https://varanasi.nic.in/temples-of-importance/"
+    }
+  ]
+}

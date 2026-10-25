@@ -1,0 +1,11 @@
+{
+  "slug": "babatpur",
+  "name": "Babatpur",
+  "nameHi": "बाबतपुर",
+  "summary": "North-west of the city, where the airport is.",
+  "description": "North-west of the city, where the airport is. [ADD FIRST-HAND: what this area is like, who should stay here, getting around.]",
+  "geo": {
+    "lat": 25.4524,
+    "lng": 82.8593
+  }
+}
