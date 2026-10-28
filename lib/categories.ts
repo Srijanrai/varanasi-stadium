@@ -108,3 +108,6 @@ export function getCategoryByType(type: ListingType) {
 
 // A category or collection only gets a public page once it has this many listings.
 export const MIN_LISTINGS_TO_PUBLISH = 5;
+// Area pages with fewer listings than this stay reachable but are noindexed and left out of the sitemap,
+// so Google never sees a page that only repeats one listing card.
+export const MIN_LISTINGS_TO_INDEX_AREA = 3;

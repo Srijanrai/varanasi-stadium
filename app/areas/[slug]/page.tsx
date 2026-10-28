@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getArea, getAreas } from "@/lib/data/content";
-import { getListingsInArea } from "@/lib/data/listings";
+import { getListingsInArea, isAreaIndexable } from "@/lib/data/listings";
 import { CATEGORIES } from "@/lib/categories";
 import { pageMeta } from "@/lib/seo/meta";
 import { LANDMARKS, formatKm, haversineKm } from "@/lib/geo";
@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
     title: `${a.name}, Varanasi – stays, temples and distance to the stadium`,
     description: a.summary,
     path: `/areas/${a.slug}/`,
+    noindex: !isAreaIndexable(a.slug),
   });
 }
 

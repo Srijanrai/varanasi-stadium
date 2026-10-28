@@ -20,18 +20,14 @@ export function StadiumImage({
   className?: string;
   children?: React.ReactNode;
 }) {
-  const tag = <span className="chip absolute top-3 right-3 z-10 bg-black/55 text-white">{label}</span>;
+  // The overlay (which holds the page's h1) is rendered once over both images, so the heading isn't duplicated.
   return (
     <>
       <div className={`relative overflow-hidden ${className}`}>
-        <Photo photo={mobile ?? desktop} aspect="aspect-[16/10]" sizes="100vw" priority={priority} className="sm:hidden">
-          {tag}
-          {children}
-        </Photo>
-        <Photo photo={desktop} aspect="aspect-[3/1]" sizes="(min-width:1152px) 1104px, 100vw" priority={priority} className="hidden sm:block">
-          {tag}
-          {children}
-        </Photo>
+        <Photo photo={mobile ?? desktop} aspect="aspect-[16/10]" sizes="100vw" priority={priority} className="sm:hidden" />
+        <Photo photo={desktop} aspect="aspect-[3/1]" sizes="(min-width:1152px) 1104px, 100vw" priority={priority} className="hidden sm:block" />
+        {children}
+        <span className="chip absolute top-3 right-3 z-10 bg-black/55 text-white">{label}</span>
       </div>
       <PhotoCredit photo={desktop} className="mt-1.5 text-right" />
     </>

@@ -1,5 +1,5 @@
 import { pageMeta } from "@/lib/seo/meta";
-import { SITE } from "@/lib/site";
+import { SITE, formOrEmail } from "@/lib/site";
 import { TrackedLink } from "@/components/TrackedLink";
 import { Breadcrumbs, Container, PageIntro, SectionHeading } from "@/components/ui";
 
@@ -28,7 +28,7 @@ export default function Page() {
             <li>Visitors call or WhatsApp you directly. We don&apos;t take a booking fee.</li>
           </ol>
           <TrackedLink
-            href={SITE.forms.listBusiness}
+            href={formOrEmail(SITE.forms.listBusiness, "List my business")}
             target="_blank"
             rel="noopener"
             event="list_business_click"

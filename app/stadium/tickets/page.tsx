@@ -59,7 +59,7 @@ export default function TicketsPage() {
         </p>
         <p>
           When a match is officially announced, tickets will be sold only through the platform BCCI or UPCA chooses. The
-          moment that happens, we&apos;ll put the link at the top of this page and send it out on our WhatsApp channel.
+          moment that happens, we&apos;ll put the link at the top of this page.
         </p>
         <p>
           <strong>We never sell tickets</strong>, and we never will.

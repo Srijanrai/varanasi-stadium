@@ -6,7 +6,7 @@ import { getArea } from "@/lib/data/content";
 import { listingJsonLd, listingUrl } from "@/lib/seo/jsonld";
 import { LANDMARKS, formatKm, type LandmarkKey } from "@/lib/geo";
 import { formatDate, formatPriceRange } from "@/lib/format";
-import { SITE } from "@/lib/site";
+import { SITE, formOrEmail } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
 import { ActionBar } from "@/components/ActionBar";
 import { ShareWhatsApp } from "@/components/ShareWhatsApp";
@@ -133,7 +133,7 @@ export function ListingDetail({ category: c, listing: l }: { category: CategoryC
                 ? `Checked ${formatDate(l.verifiedAt)}${l.verificationMethod ? ` by ${l.verificationMethod.replace("-", " ")}` : ""}`
                 : "Not yet verified"}
             </p>
-            <a href={SITE.forms.reportWrongInfo} target="_blank" rel="noopener" className="link mt-2 inline-block">
+            <a href={formOrEmail(SITE.forms.reportWrongInfo, `Correction: ${l.name}`)} target="_blank" rel="noopener" className="link mt-2 inline-block">
               Something wrong? Tell us
             </a>
             {(l.type === "hotel" || l.type === "hospital") && (

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl } from "@/lib/site";
-import { getLiveCategories, getListings, getListingsInArea } from "@/lib/data/listings";
+import { getLiveCategories, getListings, isAreaIndexable } from "@/lib/data/listings";
 import { getLiveCollections } from "@/lib/data/collections";
 import { getAreas, getPosts, getStadium } from "@/lib/data/content";
 import { listingUrl } from "@/lib/seo/jsonld";
@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl("/stadium/matches/"), lastModified: stadiumDate, priority: 0.8 },
     { url: absoluteUrl("/stadium/construction-updates/"), lastModified: stadiumDate },
     ...(getListings().length ? [{ url: absoluteUrl("/areas/") }] : []),
+    ...(getLiveCategories().length ? [{ url: absoluteUrl("/explore/"), priority: 0.8 }] : []),
     ...(["blog", "guides"] as const).filter((k) => getPosts(k).some((p) => p.status === "published")).map((k) => ({ url: absoluteUrl(`/${k}/`) })),
     ...["/about/", "/editorial-policy/", "/list-your-business/", "/contact/", "/disclaimer/", "/privacy-policy/", "/terms/", "/credits/"].map(
       (p) => ({ url: absoluteUrl(p) }),
@@ -35,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
   for (const l of getListings().filter((l) => l.status === "published"))
     entries.push({ url: absoluteUrl(listingUrl(l)), lastModified: l.updatedAt, priority: 0.6 });
-  for (const a of getAreas().filter((a) => getListingsInArea(a.slug).length > 0))
+  for (const a of getAreas().filter((a) => isAreaIndexable(a.slug)))
     entries.push({ url: absoluteUrl(`/areas/${a.slug}/`) });
   for (const kind of ["blog", "guides"] as const)
     for (const p of getPosts(kind).filter((p) => p.status === "published"))

@@ -37,7 +37,7 @@ export default function MatchesPage() {
           <p className="font-bold text-[1.75rem]">No match announced yet</p>
           <p className="mt-2 max-w-[60ch] text-muted">
             News reports mention a possible Ranji Trophy game and WPL 2027 matches, but neither has been officially
-            confirmed for this ground. Join the WhatsApp channel and we&apos;ll tell you the day one is.
+            confirmed for this ground. We&apos;ll add it here the day one is.
           </p>
         </div>
       ) : (

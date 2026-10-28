@@ -4,7 +4,7 @@ import path from "node:path";
 import { cache } from "react";
 import { ListingSchema, type Listing, type ListingType } from "../schema/listing";
 import { LANDMARKS, haversineKm, type LandmarkKey } from "../geo";
-import { CATEGORIES, HIDDEN_TYPES, MIN_LISTINGS_TO_PUBLISH, type CategoryConfig } from "../categories";
+import { CATEGORIES, HIDDEN_TYPES, MIN_LISTINGS_TO_INDEX_AREA, MIN_LISTINGS_TO_PUBLISH, type CategoryConfig } from "../categories";
 import { showDrafts } from "../site";
 
 // Phase 1 reads JSON files. Phase 3 swaps this module's internals for DB queries;
@@ -77,6 +77,10 @@ export function getListing(type: ListingType, slug: string) {
 
 export function getListingsInArea(area: string) {
   return getListings().filter((l) => l.area === area);
+}
+
+export function isAreaIndexable(area: string) {
+  return getListingsInArea(area).length >= MIN_LISTINGS_TO_INDEX_AREA;
 }
 
 export function getNearby(l: ListingWithDistances, limit = 6) {

@@ -1,5 +1,5 @@
 import { pageMeta } from "@/lib/seo/meta";
-import { SITE } from "@/lib/site";
+import { SITE, formOrEmail } from "@/lib/site";
 import { TextPage } from "@/components/TextPage";
 
 export const metadata = pageMeta({
@@ -39,7 +39,7 @@ export default function Page() {
       </p>
       <h2>Corrections</h2>
       <p>
-        Spotted a mistake? <a href={SITE.forms.reportWrongInfo}>Tell us</a> and we&apos;ll fix it, usually within two days.
+        Spotted a mistake? <a href={formOrEmail(SITE.forms.reportWrongInfo, "Correction")}>Tell us</a> and we&apos;ll fix it, usually within two days.
       </p>
     </TextPage>
   );

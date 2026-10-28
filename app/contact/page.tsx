@@ -1,5 +1,5 @@
 import { pageMeta } from "@/lib/seo/meta";
-import { SITE } from "@/lib/site";
+import { SITE, formOrEmail } from "@/lib/site";
 import { TextPage } from "@/components/TextPage";
 
 export const metadata = pageMeta({
@@ -16,15 +16,19 @@ export default function Page() {
       </p>
       <ul>
         <li>
-          Found something wrong? <a href={SITE.forms.reportWrongInfo}>Report it here</a> — it&apos;s the fastest way to get it
+          Found something wrong? <a href={formOrEmail(SITE.forms.reportWrongInfo, "Correction")}>Report it here</a> — it&apos;s the fastest way to get it
           fixed.
         </li>
         <li>
-          Want your business listed? <a href={SITE.forms.listBusiness}>Fill in this short form</a>.
+          Want your business listed? <a href={formOrEmail(SITE.forms.listBusiness, "List my business")}>
+            {SITE.forms.listBusiness ? "Fill in this short form" : "Email us your details"}
+          </a>.
         </li>
-        <li>
-          For match announcements, <a href={SITE.whatsappChannelUrl}>follow our WhatsApp channel</a>.
-        </li>
+        {SITE.whatsappChannelUrl && (
+          <li>
+            For match announcements, <a href={SITE.whatsappChannelUrl}>follow our WhatsApp channel</a>.
+          </li>
+        )}
       </ul>
       <p>We can&apos;t help with ticket bookings — we don&apos;t sell tickets.</p>
     </TextPage>

@@ -81,9 +81,11 @@ export default function HomePage() {
                 <Link href="/stadium/how-to-reach/" className="btn btn-gold !min-h-10 !px-3.5 text-[0.78rem] whitespace-nowrap sm:!min-h-12 sm:!px-5 sm:text-[0.92rem]">
                   Plan your match day <IconChevron className="h-4 w-4" />
                 </Link>
+                {SITE.whatsappChannelUrl && (
                 <TrackedLink href={SITE.whatsappChannelUrl} target="_blank" rel="noopener" event="alert_signup" params={{ from: "home-hero" }} className="btn btn-outline-light !min-h-10 !px-3.5 text-[0.78rem] whitespace-nowrap sm:!min-h-12 sm:!px-5 sm:text-[0.92rem]">
                   <WhatsAppIcon className="h-4 w-4" /> Get match alerts
                 </TrackedLink>
+                )}
               </div>
             </div>
           </div>

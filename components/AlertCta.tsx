@@ -4,6 +4,7 @@ import { WhatsAppIcon } from "./ShareWhatsApp";
 
 /** Inline sign-up band. Never a popup — intrusive interstitials hurt mobile ranking. */
 export function AlertCta({ from, lang = "en" }: { from: string; lang?: "en" | "hi" }) {
+  if (!SITE.whatsappChannelUrl) return null;
   const t =
     lang === "hi"
       ? {
