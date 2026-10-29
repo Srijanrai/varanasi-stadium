@@ -56,6 +56,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer categories={[...nav, ...extra]} />
         <BottomNav />
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
+        {/* Cloudflare Web Analytics: cookieless page-view beacon. Production only, so local dev never counts as traffic. */}
+        {process.env.NODE_ENV === "production" && SITE.cloudflareAnalyticsToken && (
+          <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon={JSON.stringify({ token: SITE.cloudflareAnalyticsToken })}
+          />
+        )}
       </body>
     </html>
   );

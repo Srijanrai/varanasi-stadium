@@ -13,6 +13,8 @@ export const SITE = {
     listBusiness: null as string | null,
     reportWrongInfo: null as string | null,
   },
+  // Cloudflare Web Analytics beacon token (public, cookieless). Empty string disables the beacon.
+  cloudflareAnalyticsToken: "04fb391a603643dbb58929f264d03e90",
   disclaimer:
     "Independent, unofficial guide. Not affiliated with BCCI, UPCA, IPL, WPL or any government body. We do not sell tickets.",
   locale: "en_IN",
