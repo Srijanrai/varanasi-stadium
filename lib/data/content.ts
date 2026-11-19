@@ -57,8 +57,11 @@ export const RouteOriginSchema = z.object({
   normalMinutes: z.tuple([z.number(), z.number()]).nullable(),
   fare: z.string().nullable(),
   bestOption: z.string(),
+  bestOptionHi: z.string().optional(),
   steps: z.array(z.string()),
+  stepsHi: z.array(z.string()).optional(),
   tip: z.string().nullable(),
+  tipHi: z.string().nullable().optional(),
   lastChecked: z.string().nullable(),
 });
 export type RouteOrigin = z.infer<typeof RouteOriginSchema>;

@@ -6,10 +6,11 @@ import { ShareWhatsApp } from "@/components/ShareWhatsApp";
 import { Breadcrumbs, Container, FaqList, PageIntro, SectionHeading } from "@/components/ui";
 
 export const metadata = pageMeta({
-  title: "Varanasi Stadium tickets – are they on sale? How to avoid scams",
+  title: "Varanasi cricket stadium tickets – price, sale date, how to buy",
   description:
-    "Are tickets for the Varanasi (Ganjari) cricket stadium on sale? What we know right now, where official tickets will be sold, and how to avoid fake sellers.",
+    "Are tickets for the Varanasi (Ganjari) cricket stadium on sale? Ticket price, when sales open, the official seller, and how to avoid fake sellers.",
   path: "/stadium/tickets/",
+  hindiPath: "/hi/stadium/tickets/",
 });
 
 export default function TicketsPage() {
@@ -53,18 +54,38 @@ export default function TicketsPage() {
       </div>
 
       <div className="prose-local mt-10">
-        <p>
-          We get this question more than any other, so here&apos;s the straight answer: there are no tickets to buy yet.
-          Nobody — no agent, no Instagram page, no &quot;insider&quot; — has them.
-        </p>
-        <p>
-          When a match is officially announced, tickets will be sold only through the platform BCCI or UPCA chooses. The
-          moment that happens, we&apos;ll put the link at the top of this page.
-        </p>
+        {!onSale && (
+          <>
+            <p>
+              We get this question more than any other, so here&apos;s the straight answer: there are no tickets to buy yet.
+              Nobody — no agent, no Instagram page, no &quot;insider&quot; — has them.
+            </p>
+            <p>
+              When a match is officially announced, tickets will be sold only through the platform BCCI or UPCA chooses.
+              The moment that happens, we&apos;ll put the link at the top of this page.
+            </p>
+          </>
+        )}
         <p>
           <strong>We never sell tickets</strong>, and we never will.
         </p>
       </div>
+
+      {!onSale && (
+      <section className="mt-12">
+        <SectionHeading>Varanasi cricket stadium ticket price</SectionHeading>
+        <div className="prose-local max-w-[68ch]">
+          <p>
+            There is no ticket price yet, because there is no match. Prices are set by the organisers for each match,
+            so a Ranji Trophy game, an IPL match and a WPL match will all be priced differently, by different people.
+          </p>
+          <p>
+            When a match is announced we&apos;ll list the official price bands here, stand by stand, the day they&apos;re
+            published, together with the official link. Any price quoted for this stadium today is made up.
+          </p>
+        </div>
+      </section>
+      )}
 
       <section className="mt-12">
         <SectionHeading>How not to get cheated</SectionHeading>

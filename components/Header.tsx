@@ -16,7 +16,12 @@ const STADIUM_LINKS: NavItem[] = [
 ];
 
 // Pages that have a Hindi version. Keep in sync with app/hi/.
-const HINDI_PAIRS: Record<string, string> = { "/stadium/": "/hi/stadium/" };
+const HINDI_PAIRS: Record<string, string> = {
+  "/stadium/": "/hi/stadium/",
+  "/stadium/matches/": "/hi/stadium/matches/",
+  "/stadium/how-to-reach/": "/hi/stadium/how-to-reach/",
+  "/stadium/tickets/": "/hi/stadium/tickets/",
+};
 const HINDI_HUB = "/hi/stadium/";
 
 export function Header({ categories }: { categories: NavItem[] }) {

@@ -8,6 +8,11 @@ import { listingUrl } from "@/lib/seo/jsonld";
 // One sitemap is fine below ~5,000 URLs; switch to generateSitemaps() per type after that.
 export default function sitemap(): MetadataRoute.Sitemap {
   const stadiumDate = getStadium().lastChecked;
+  // An English page and its Hindi twin, each pointing at the other.
+  const pair = (en: string, hi: string, enPriority: number, hiPriority: number): MetadataRoute.Sitemap => [
+    { url: absoluteUrl(en), lastModified: stadiumDate, priority: enPriority, alternates: { languages: { "hi-IN": absoluteUrl(hi) } } },
+    { url: absoluteUrl(hi), lastModified: stadiumDate, priority: hiPriority, alternates: { languages: { "en-IN": absoluteUrl(en) } } },
+  ];
   const entries: MetadataRoute.Sitemap = [
     { url: absoluteUrl("/"), lastModified: stadiumDate, changeFrequency: "weekly", priority: 1 },
     {
@@ -18,9 +23,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { "hi-IN": absoluteUrl("/hi/stadium/") } },
     },
     { url: absoluteUrl("/hi/stadium/"), lastModified: stadiumDate, alternates: { languages: { "en-IN": absoluteUrl("/stadium/") } } },
-    { url: absoluteUrl("/stadium/how-to-reach/"), lastModified: stadiumDate, priority: 0.9 },
-    { url: absoluteUrl("/stadium/tickets/"), lastModified: stadiumDate, priority: 0.8 },
-    { url: absoluteUrl("/stadium/matches/"), lastModified: stadiumDate, priority: 0.8 },
+    ...pair("/stadium/how-to-reach/", "/hi/stadium/how-to-reach/", 0.9, 0.8),
+    ...pair("/stadium/tickets/", "/hi/stadium/tickets/", 0.8, 0.7),
+    ...pair("/stadium/matches/", "/hi/stadium/matches/", 0.8, 0.7),
     { url: absoluteUrl("/stadium/construction-updates/"), lastModified: stadiumDate },
     ...(getListings().length ? [{ url: absoluteUrl("/areas/") }] : []),
     ...(getLiveCategories().length ? [{ url: absoluteUrl("/explore/"), priority: 0.8 }] : []),

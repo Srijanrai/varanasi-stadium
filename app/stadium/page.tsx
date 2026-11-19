@@ -13,7 +13,7 @@ import { IconCalendar, IconCrane, IconRoute, IconTicket } from "@/components/ico
 import { Breadcrumbs, Container, FaqList, QuickAnswers, SectionHeading, Sources } from "@/components/ui";
 
 export const metadata = pageMeta({
-  title: "Varanasi Cricket Stadium (Ganjari) – status, matches, how to reach",
+  title: "Varanasi International Cricket Stadium (Ganjari) – status, matches",
   description:
     "Everything we know about the new Varanasi international cricket stadium at Ganjari: construction status, first match, tickets, seating and how to get there.",
   path: "/stadium/",
@@ -53,7 +53,7 @@ export default function StadiumPage() {
       </div>
 
       <p className="mt-6 max-w-[62ch] text-[1.05rem] text-muted">
-        The new stadium at Ganjari is nearly built, but it isn&apos;t open and no match has been officially fixed. Here&apos;s
+        Varanasi&apos;s new Ganjari stadium is nearly built, but it isn&apos;t open and no match has been officially fixed. Here&apos;s
         what&apos;s confirmed, what&apos;s only talk, and how to plan for the first game.
       </p>
 

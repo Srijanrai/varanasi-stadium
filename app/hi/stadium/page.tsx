@@ -12,19 +12,19 @@ import { IconCalendar, IconCrane, IconRoute, IconTicket } from "@/components/ico
 import { Breadcrumbs, Container, FaqList, SectionHeading } from "@/components/ui";
 
 export const metadata = pageMeta({
-  title: "वाराणसी क्रिकेट स्टेडियम (गंजारी) – कब खुलेगा, मैच, टिकट, कैसे पहुँचें",
+  title: "वाराणसी क्रिकेट स्टेडियम (गंजारी स्टेडियम) – कब खुलेगा, मैच कब है, टिकट",
   description:
     "गंजारी में बन रहे वाराणसी अंतरराष्ट्रीय क्रिकेट स्टेडियम की पूरी जानकारी: निर्माण की स्थिति, पहला मैच, टिकट और वहाँ तक कैसे पहुँचें।",
   path: "/hi/stadium/",
   englishPath: "/stadium/",
 });
 
-// Mirrors the English /stadium/ page; the linked sub-pages are English-only for now.
+// Mirrors the English /stadium/ page. Construction updates are still English-only.
 const PLAN = [
-  { href: "/stadium/how-to-reach/", title: "कैसे पहुँचें", body: "रास्ते, समय और निकलने का प्लानर", Icon: IconRoute },
-  { href: "/stadium/tickets/", title: "टिकट", body: "क्या पता है, और धोखे से कैसे बचें", Icon: IconTicket },
-  { href: "/stadium/matches/", title: "मैच", body: "सिर्फ़ आधिकारिक रूप से घोषित मैच", Icon: IconCalendar },
-  { href: "/stadium/construction-updates/", title: "निर्माण", body: "तारीख़ के साथ प्रगति और स्रोत", Icon: IconCrane },
+  { href: "/hi/stadium/how-to-reach/", title: "कैसे पहुँचें", body: "रास्ते, समय और निकलने का प्लानर", Icon: IconRoute },
+  { href: "/hi/stadium/tickets/", title: "टिकट", body: "क्या पता है, और धोखे से कैसे बचें", Icon: IconTicket },
+  { href: "/hi/stadium/matches/", title: "मैच", body: "सिर्फ़ आधिकारिक रूप से घोषित मैच", Icon: IconCalendar },
+  { href: "/stadium/construction-updates/", title: "निर्माण", body: "प्रगति और स्रोत (अंग्रेज़ी में)", Icon: IconCrane, en: true },
 ];
 
 const FACTS = [
@@ -65,13 +65,13 @@ export default function HindiStadiumPage() {
         </div>
 
         <section className="mt-12">
-          <SectionHeading sub="ये पन्ने अभी अंग्रेज़ी में हैं">मैच के दिन की तैयारी</SectionHeading>
+          <SectionHeading>मैच के दिन की तैयारी</SectionHeading>
           <ul className="grid grid-cols-4 gap-2 sm:gap-4">
-            {PLAN.map(({ href, title, body, Icon }) => (
+            {PLAN.map(({ href, title, body, Icon, en }) => (
               <li key={href}>
                 <Link
                   href={href}
-                  hrefLang="en"
+                  hrefLang={en ? "en" : undefined}
                   className="card group flex h-full flex-col items-center gap-2 p-3 text-center transition-transform hover:-translate-y-0.5 sm:p-5"
                 >
                   <span className="icon-tile h-11 w-11 sm:h-14 sm:w-14">

@@ -26,7 +26,7 @@
   "ownerConsent": false,
   "featured": false,
   "createdAt": "2026-10-25",
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-11-16",
   "type": "transport",
   "id": "tr-cantt",
   "slug": "varanasi-cantt-station",
@@ -55,6 +55,21 @@
     {
       "label": "NE Railway – Banaras (Manduadih) station note",
       "url": "https://ner.indianrailways.gov.in/uploads/files/1603885223956-Manduadih.pdf"
+    }
+  ],
+  "seoTitle": "Varanasi Cantt railway station – distance to stadium, cabs",
+  "faqs": [
+    {
+      "q": "How far is the cricket stadium from Varanasi Cantt station?",
+      "a": "Roughly 15–18 km by road, which usually means 40 minutes to an hour on a normal day. Allow much longer on a match day. Cabs, app taxis and autos all leave from outside the main exit; ask for the Ring Road and Rajatalab, and agree the fare before you set off."
+    },
+    {
+      "q": "Is Banaras Cantt another name for Varanasi Junction?",
+      "a": "Yes, it's the old name. The station was called Banaras Cantt until 1956, when it was renamed Varanasi Junction. Everyone in the city still just says Cantt. The station code is BSB."
+    },
+    {
+      "q": "What is the railway enquiry number for Varanasi Cantt?",
+      "a": "Dial 139, the national railway enquiry number. The Varanasi district website still lists 135. The station is open round the clock."
     }
   ]
 }

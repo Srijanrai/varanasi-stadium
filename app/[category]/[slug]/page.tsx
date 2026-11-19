@@ -40,7 +40,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
   const l = r.listing!;
   const area = getArea(l.area)?.name ?? "Varanasi";
   const title =
-    l.type === "hotel"
+    l.seoTitle ??
+    (l.type === "hotel"
       ? `${l.name}, ${area} – price, distance to stadium`
       : l.type === "temple"
         ? `${l.name} – timings, aarti, darshan tips`
@@ -48,7 +49,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
           ? `${l.name} – OPD timings, emergency, contact`
           : l.type === "ghat"
             ? `${l.name} – aarti time, boats, what to know`
-            : `${l.name} – distance to stadium, how to get around`;
+            : `${l.name} – distance to stadium, how to get around`);
   return pageMeta({
     title,
     description: l.summary,

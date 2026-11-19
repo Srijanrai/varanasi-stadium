@@ -42,6 +42,10 @@ const Base = z.object({
   photos: z.array(PhotoSchema).default([]),
   tags: z.array(z.string()).default([]),
   quickFacts: z.array(z.string()).default([]),
+  /** Overrides the category's templated <title> for this page. Keep it under ~65 characters. */
+  seoTitle: z.string().max(70).optional(),
+  /** Page-specific questions, shown as an FAQ with FAQPage markup. */
+  faqs: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
   /** Where the facts on this page come from (shown on the page, required for official-source verification). */
   sources: z.array(z.object({ label: z.string(), url: z.string().url() })).default([]),
   verifiedAt: isoDate.nullable().default(null),

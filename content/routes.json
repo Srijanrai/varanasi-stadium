@@ -3,15 +3,50 @@
     "id": "cantt",
     "name": "Varanasi Cantt station",
     "nameHi": "वाराणसी कैंट स्टेशन",
-    "geo": { "lat": 25.327, "lng": 82.987 },
+    "geo": {
+      "lat": 25.327,
+      "lng": 82.987
+    },
     "roadKm": null,
     "normalMinutes": null,
     "fare": null,
     "bestOption": "Cab or app taxi from the station's pre-paid stand",
+    "bestOptionHi": "स्टेशन के प्री-पेड स्टैंड से टैक्सी या ऐप कैब",
     "steps": [
       "Take a cab or auto from outside the main exit.",
       "Head towards the Ring Road / Rajatalab side.",
       "Follow signs for Ganjari as you get close."
+    ],
+    "stepsHi": [
+      "मुख्य निकास के बाहर से टैक्सी या ऑटो लें।",
+      "रिंग रोड / राजातालाब की तरफ़ चलें।",
+      "पास पहुँचकर गंजारी के साइनबोर्ड देखते चलें।"
+    ],
+    "tip": null,
+    "lastChecked": null
+  },
+  {
+    "id": "banaras-station",
+    "name": "Banaras station (Manduadih)",
+    "nameHi": "बनारस स्टेशन (मंडुआडीह)",
+    "geo": {
+      "lat": 25.29924,
+      "lng": 82.97105
+    },
+    "roadKm": null,
+    "normalMinutes": null,
+    "fare": null,
+    "bestOption": "Cab or auto from outside the station",
+    "bestOptionHi": "स्टेशन के बाहर से टैक्सी या ऑटो",
+    "steps": [
+      "Take a cab or auto from the station forecourt.",
+      "Head to the Ring Road and follow it towards Rajatalab.",
+      "Follow signs for Ganjari as you get close."
+    ],
+    "stepsHi": [
+      "स्टेशन के सामने से टैक्सी या ऑटो लें।",
+      "रिंग रोड पकड़कर राजातालाब की तरफ़ चलें।",
+      "पास पहुँचकर गंजारी के साइनबोर्ड देखते चलें।"
     ],
     "tip": null,
     "lastChecked": null
@@ -20,15 +55,24 @@
     "id": "ghats",
     "name": "Godowlia / Dashashwamedh (the ghats)",
     "nameHi": "गोदौलिया / दशाश्वमेध",
-    "geo": { "lat": 25.309, "lng": 83.006 },
+    "geo": {
+      "lat": 25.309,
+      "lng": 83.006
+    },
     "roadKm": null,
     "normalMinutes": null,
     "fare": null,
     "bestOption": "Walk or e-rickshaw to the main road, then a cab",
+    "bestOptionHi": "पैदल या ई-रिक्शा से मुख्य सड़क तक, फिर टैक्सी",
     "steps": [
       "Cars can't get into the lanes near the ghats — walk or take an e-rickshaw out to the main road first.",
       "Take a cab from there towards Rajatalab.",
       "Allow extra time to get out of the old city traffic."
+    ],
+    "stepsHi": [
+      "घाटों के पास की गलियों में गाड़ियाँ नहीं जा सकतीं — पहले पैदल या ई-रिक्शा से मुख्य सड़क तक निकलें।",
+      "वहाँ से राजातालाब की तरफ़ टैक्सी लें।",
+      "पुराने शहर के ट्रैफ़िक से निकलने के लिए अतिरिक्त समय रखें।"
     ],
     "tip": null,
     "lastChecked": null
@@ -37,12 +81,23 @@
     "id": "assi",
     "name": "Assi Ghat",
     "nameHi": "अस्सी घाट",
-    "geo": { "lat": 25.2867, "lng": 83.0068 },
+    "geo": {
+      "lat": 25.2867,
+      "lng": 83.0068
+    },
     "roadKm": null,
     "normalMinutes": null,
     "fare": null,
     "bestOption": "Cab from Assi crossing",
-    "steps": ["Walk up to Assi crossing.", "Take a cab towards Rajatalab via the Ring Road."],
+    "bestOptionHi": "अस्सी चौराहे से टैक्सी",
+    "steps": [
+      "Walk up to Assi crossing.",
+      "Take a cab towards Rajatalab via the Ring Road."
+    ],
+    "stepsHi": [
+      "अस्सी चौराहे तक पैदल आएँ।",
+      "रिंग रोड से होकर राजातालाब की तरफ़ टैक्सी लें।"
+    ],
     "tip": null,
     "lastChecked": null
   },
@@ -50,12 +105,23 @@
     "id": "bhu",
     "name": "BHU / Lanka",
     "nameHi": "बीएचयू / लंका",
-    "geo": { "lat": 25.2677, "lng": 82.9913 },
+    "geo": {
+      "lat": 25.2677,
+      "lng": 82.9913
+    },
     "roadKm": null,
     "normalMinutes": null,
     "fare": null,
     "bestOption": "Cab or shared auto towards Rajatalab",
-    "steps": ["Start from Lanka gate.", "Head west towards the Ring Road and Rajatalab."],
+    "bestOptionHi": "राजातालाब की तरफ़ टैक्सी या शेयर्ड ऑटो",
+    "steps": [
+      "Start from Lanka gate.",
+      "Head west towards the Ring Road and Rajatalab."
+    ],
+    "stepsHi": [
+      "लंका गेट से चलें।",
+      "पश्चिम में रिंग रोड और राजातालाब की तरफ़ बढ़ें।"
+    ],
     "tip": null,
     "lastChecked": null
   },
@@ -63,12 +129,23 @@
     "id": "airport",
     "name": "Varanasi airport (Babatpur)",
     "nameHi": "बाबतपुर एयरपोर्ट",
-    "geo": { "lat": 25.4524, "lng": 82.8593 },
+    "geo": {
+      "lat": 25.4524,
+      "lng": 82.8593
+    },
     "roadKm": null,
     "normalMinutes": null,
     "fare": null,
     "bestOption": "Pre-paid or app taxi from the airport",
-    "steps": ["Book a cab at the arrivals area.", "Ask for the Ring Road route to Rajatalab / Ganjari."],
+    "bestOptionHi": "एयरपोर्ट से प्री-पेड या ऐप टैक्सी",
+    "steps": [
+      "Book a cab at the arrivals area.",
+      "Ask for the Ring Road route to Rajatalab / Ganjari."
+    ],
+    "stepsHi": [
+      "अराइवल एरिया में टैक्सी बुक करें।",
+      "राजातालाब / गंजारी के लिए रिंग रोड वाला रास्ता बोलें।"
+    ],
     "tip": null,
     "lastChecked": null
   }

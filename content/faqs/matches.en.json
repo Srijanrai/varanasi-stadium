@@ -1,0 +1,18 @@
+[
+  {
+    "q": "Is there any match at the Varanasi stadium right now?",
+    "a": "Only the fixtures listed at the top of this page, which are the ones BCCI or UPCA have officially announced. If the list is empty, nothing has been announced yet. We add a match the same day it's official."
+  },
+  {
+    "q": "Varanasi stadium me match kab hai?",
+    "a": "Jo bhi match BCCI ya UPCA ne officially announce kiya hai, woh is page par upar list hai, date aur ticket link ke saath. Agar upar koi match nahi dikh raha, to abhi koi match tay nahi hua hai. Official announcement ke din hi hum yahan date daal dete hain."
+  },
+  {
+    "q": "How do I know a Varanasi stadium match schedule is real?",
+    "a": "Only trust fixtures announced by BCCI or UPCA on their own websites, or by the league itself. Every match on this page links to that official announcement. A schedule shared on WhatsApp or Instagram without such a link is a rumour, and often a ticket scam."
+  },
+  {
+    "q": "Where does the match schedule appear?",
+    "a": "Right here, with the date, teams, competition and the official ticket link. The stadium page also shows the next match at the top, in English and Hindi."
+  }
+]

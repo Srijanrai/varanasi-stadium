@@ -13,7 +13,7 @@ import { ShareWhatsApp } from "@/components/ShareWhatsApp";
 import { PhotoCard, listingKind } from "@/components/ListingRow";
 import { Gallery } from "@/components/Gallery";
 import { CATEGORY_ICONS, IconCheck, IconPin } from "@/components/icons";
-import { Breadcrumbs, Container, DraftNotice, QuickAnswers, SectionHeading, Sources } from "@/components/ui";
+import { Breadcrumbs, Container, DraftNotice, FaqList, QuickAnswers, SectionHeading, Sources } from "@/components/ui";
 
 export function ListingDetail({ category: c, listing: l }: { category: CategoryConfig; listing: ListingWithDistances }) {
   const area = getArea(l.area);
@@ -108,6 +108,13 @@ export function ListingDetail({ category: c, listing: l }: { category: CategoryC
               </div>
             )}
           </section>
+
+          {l.faqs.length > 0 && (
+            <section className="mt-10" aria-labelledby="faq">
+              <SectionHeading id="faq">Questions</SectionHeading>
+              <FaqList faqs={l.faqs} checked={l.verifiedAt ?? undefined} />
+            </section>
+          )}
 
           <div className="mt-6">
             <ShareWhatsApp text={`${l.name} — ${l.summary}`} />

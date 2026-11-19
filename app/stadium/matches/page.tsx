@@ -1,22 +1,25 @@
-import { getMatches } from "@/lib/data/content";
+import { getFaqs, getMatches, getStadium } from "@/lib/data/content";
 import { pageMeta } from "@/lib/seo/meta";
 import { sportsEventJsonLd } from "@/lib/seo/jsonld";
 import { formatDate } from "@/lib/format";
 import { JsonLd } from "@/components/JsonLd";
 import { AlertCta } from "@/components/AlertCta";
-import { Breadcrumbs, Container, PageIntro } from "@/components/ui";
+import { Breadcrumbs, Container, FaqList, PageIntro, SectionHeading } from "@/components/ui";
 
 export const metadata = pageMeta({
-  title: "Matches at Varanasi Cricket Stadium – officially announced fixtures",
+  title: "Varanasi Cricket Stadium match schedule – announced fixtures",
   description:
-    "Officially announced matches at the Varanasi (Ganjari) cricket stadium. We list a match only once BCCI or UPCA confirms it — no rumours.",
+    "Varanasi cricket stadium match schedule: officially announced fixtures only, when the first match is, and how to tell a real schedule from a rumour.",
   path: "/stadium/matches/",
+  hindiPath: "/hi/stadium/matches/",
 });
 
 export default function MatchesPage() {
   const matches = getMatches();
   const upcoming = matches.filter((m) => m.status === "announced");
   const past = matches.filter((m) => m.status === "completed");
+  // Questions that stop being true the day a fixture is announced live in matches-none.en.json.
+  const faqs = [...(upcoming.length ? [] : getFaqs("matches-none.en")), ...getFaqs("matches.en")];
 
   return (
     <Container>
@@ -28,7 +31,7 @@ export default function MatchesPage() {
         ]}
       />
       <PageIntro
-        title="Matches at the Varanasi stadium"
+        title="Varanasi cricket stadium match schedule"
         lead="We only list a match here once BCCI or UPCA has officially announced it. News reports and rumours stay off this page."
       />
 
@@ -68,6 +71,13 @@ export default function MatchesPage() {
               </li>
             ))}
           </ul>
+        </section>
+      )}
+
+      {faqs.length > 0 && (
+        <section className="mt-12" aria-labelledby="faq">
+          <SectionHeading id="faq">Match schedule questions</SectionHeading>
+          <FaqList faqs={faqs} checked={getStadium().lastChecked} />
         </section>
       )}
 

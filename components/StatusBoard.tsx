@@ -22,8 +22,8 @@ export function StatusBoard({
 
   const cards = [
     { label: t.built, value: `~ ${stadium.progressPercent}%`, note: t.builtNote, href: "/stadium/construction-updates/", Icon: IconCrane, danger: false, progress: stadium.progressPercent },
-    { label: t.match, value: nextMatch?.date ? formatDate(nextMatch.date, hi ? "hi-IN" : "en-IN") : t.none, note: t.matchNote, href: "/stadium/matches/", Icon: IconCalendar, danger: false, redIcon: true },
-    { label: t.tickets, value: ticketsOpen ? t.onSale : t.noSale, note: t.ticketNote, href: "/stadium/tickets/", Icon: IconTicket, danger: !ticketsOpen },
+    { label: t.match, value: nextMatch?.date ? formatDate(nextMatch.date, hi ? "hi-IN" : "en-IN") : t.none, note: t.matchNote, href: hi ? "/hi/stadium/matches/" : "/stadium/matches/", Icon: IconCalendar, danger: false, redIcon: true },
+    { label: t.tickets, value: ticketsOpen ? t.onSale : t.noSale, note: t.ticketNote, href: hi ? "/hi/stadium/tickets/" : "/stadium/tickets/", Icon: IconTicket, danger: !ticketsOpen },
   ];
 
   return (
