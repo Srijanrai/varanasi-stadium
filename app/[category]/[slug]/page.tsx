@@ -6,6 +6,7 @@ import { pageMeta } from "@/lib/seo/meta";
 import { CollectionView } from "./CollectionView";
 import { ListingDetail } from "./ListingDetail";
 import { getArea } from "@/lib/data/content";
+import { HINDI_LISTING_PAIRS } from "@/lib/hindi";
 
 type Params = { category: string; slug: string };
 
@@ -54,6 +55,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
     title,
     description: l.summary,
     path: `/${r.c.path}/${l.slug}/`,
+    hindiPath: HINDI_LISTING_PAIRS[`/${r.c.path}/${l.slug}/`],
     noindex: l.status !== "published",
     image: l.photos[0] ? { url: l.photos[0].src, width: l.photos[0].width, height: l.photos[0].height, alt: l.photos[0].alt } : undefined,
   });

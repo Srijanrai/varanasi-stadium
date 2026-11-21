@@ -1,0 +1,31 @@
+{
+  "type": "hotel",
+  "id": "h-hotel-ganges-grand",
+  "slug": "hotel-ganges-grand",
+  "name": "Hotel Ganges Grand",
+  "category": "hotel",
+  "area": "dashashwamedh",
+  "address": "D37/47, Dashashwamedh Road, Varanasi",
+  "pincode": "221001",
+  "geo": {
+    "lat": 25.30929,
+    "lng": 83.00676
+  },
+  "phone": [
+    "+917235809898"
+  ],
+  "website": "https://www.gangesgrand.in/",
+  "summary": "Candidate stay on Dashashwamedh Road. Not yet verified: we haven't called this hotel, so no details are confirmed.",
+  "description": "[VERIFY] Candidate found in public map data (OpenStreetMap) and web listings on 2026-11-20. It sits on Dashashwamedh Road, close to Dashashwamedh Ghat and Kashi Vishwanath, and could suit visitors combining a match with the evening aarti and darshan. Nothing here is confirmed yet.\n\n[VERIFY] Call and confirm: the hotel is open and the name is right; the exact address and pincode; the phone number; the rough room price range per night; check-in and check-out times; whether it takes foreign guests; and whether it will take bookings for match days.\n\n[ADD FIRST-HAND] After the call, replace this text with 150+ words in our own words. Add a photo you took, or one the owner gives permission for. Never use photos or text from booking sites.",
+  "quickFacts": [],
+  "photos": [],
+  "tags": [],
+  "amenities": [],
+  "verifiedAt": null,
+  "verificationMethod": null,
+  "ownerConsent": false,
+  "status": "draft",
+  "featured": false,
+  "createdAt": "2026-11-20",
+  "updatedAt": "2026-11-20"
+}

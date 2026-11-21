@@ -22,7 +22,13 @@ export const PhotoSchema = z.object({
   height: z.number().int().positive(),
 });
 
-const TimeSlot = z.object({ name: z.string(), time: z.string(), note: z.string().optional() });
+const TimeSlot = z.object({
+  name: z.string(),
+  nameHi: z.string().optional(),
+  time: z.string(),
+  note: z.string().optional(),
+  noteHi: z.string().optional(),
+});
 
 const Base = z.object({
   id: z.string().min(1),

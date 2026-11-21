@@ -4,6 +4,7 @@ import { getLiveCategories, getListings, isAreaIndexable } from "@/lib/data/list
 import { getLiveCollections } from "@/lib/data/collections";
 import { getAreas, getPosts, getStadium } from "@/lib/data/content";
 import { listingUrl } from "@/lib/seo/jsonld";
+import { HINDI_LISTING_PAIRS } from "@/lib/hindi";
 
 // One sitemap is fine below ~5,000 URLs; switch to generateSitemaps() per type after that.
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -39,8 +40,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push({ url: absoluteUrl(`/${c.path}/`), priority: 0.8 });
     for (const col of getLiveCollections(c.type)) entries.push({ url: absoluteUrl(`/${c.path}/${col.slug}/`), priority: 0.7 });
   }
-  for (const l of getListings().filter((l) => l.status === "published"))
-    entries.push({ url: absoluteUrl(listingUrl(l)), lastModified: l.updatedAt, priority: 0.6 });
+  for (const l of getListings().filter((l) => l.status === "published")) {
+    const hi = HINDI_LISTING_PAIRS[listingUrl(l)];
+    entries.push({
+      url: absoluteUrl(listingUrl(l)),
+      lastModified: l.updatedAt,
+      priority: 0.6,
+      ...(hi ? { alternates: { languages: { "hi-IN": absoluteUrl(hi) } } } : {}),
+    });
+    if (hi)
+      entries.push({ url: absoluteUrl(hi), lastModified: l.updatedAt, priority: 0.6, alternates: { languages: { "en-IN": absoluteUrl(listingUrl(l)) } } });
+  }
   for (const a of getAreas().filter((a) => isAreaIndexable(a.slug)))
     entries.push({ url: absoluteUrl(`/areas/${a.slug}/`) });
   for (const kind of ["blog", "guides"] as const)

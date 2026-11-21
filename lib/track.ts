@@ -7,7 +7,8 @@ export type TrackEvent =
   | "alert_signup"
   | "list_business_click"
   | "share_whatsapp"
-  | "planner_used";
+  | "planner_used"
+  | "affiliate_click";
 
 type Params = Record<string, string | number | undefined>;
 

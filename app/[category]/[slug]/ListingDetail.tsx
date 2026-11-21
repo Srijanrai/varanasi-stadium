@@ -7,6 +7,7 @@ import { listingJsonLd, listingUrl } from "@/lib/seo/jsonld";
 import { LANDMARKS, formatKm, type LandmarkKey } from "@/lib/geo";
 import { formatDate, formatPriceRange } from "@/lib/format";
 import { SITE, formOrEmail } from "@/lib/site";
+import { HINDI_LISTING_PAIRS } from "@/lib/hindi";
 import { JsonLd } from "@/components/JsonLd";
 import { ActionBar } from "@/components/ActionBar";
 import { ShareWhatsApp } from "@/components/ShareWhatsApp";
@@ -46,6 +47,14 @@ export function ListingDetail({ category: c, listing: l }: { category: CategoryC
           {l.nameHi && (
             <p lang="hi" className="mt-1 text-muted">
               {l.nameHi}
+              {HINDI_LISTING_PAIRS[listingUrl(l)] && (
+                <>
+                  {" · "}
+                  <Link href={HINDI_LISTING_PAIRS[listingUrl(l)]} hrefLang="hi" className="link">
+                    हिंदी में पढ़ें
+                  </Link>
+                </>
+              )}
             </p>
           )}
           <div className="mt-3 flex flex-wrap items-center gap-2">

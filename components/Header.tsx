@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { IconClose, IconMenu, IconSearch } from "./icons";
 import { Logo } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
+import { HINDI_LISTING_PAIRS } from "@/lib/hindi";
 
 type NavItem = { href: string; label: string };
 
@@ -21,6 +22,7 @@ const HINDI_PAIRS: Record<string, string> = {
   "/stadium/matches/": "/hi/stadium/matches/",
   "/stadium/how-to-reach/": "/hi/stadium/how-to-reach/",
   "/stadium/tickets/": "/hi/stadium/tickets/",
+  ...HINDI_LISTING_PAIRS,
 };
 const HINDI_HUB = "/hi/stadium/";
 

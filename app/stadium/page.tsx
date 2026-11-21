@@ -9,6 +9,7 @@ import { AlertCta } from "@/components/AlertCta";
 import { ListingRail } from "@/components/ListingRow";
 import { ShareWhatsApp } from "@/components/ShareWhatsApp";
 import { StadiumImage } from "@/components/StadiumImage";
+import { STAY_PRESETS, StayBoxSection } from "@/components/StayBoxServer";
 import { IconCalendar, IconCrane, IconRoute, IconTicket } from "@/components/icons";
 import { Breadcrumbs, Container, FaqList, QuickAnswers, SectionHeading, Sources } from "@/components/ui";
 
@@ -115,6 +116,15 @@ export default function StadiumPage() {
           <ListingRail listings={stays} />
         </section>
       )}
+
+      <div className="mt-12">
+        <StayBoxSection
+          id="stadium"
+          title="Hotels near Varanasi cricket stadium"
+          intro="There are no hotels right next to the ground yet. Pick the side of the city that suits your trip, then compare prices."
+          presets={[STAY_PRESETS.stadiumSide, STAY_PRESETS.lanka, STAY_PRESETS.cantt, STAY_PRESETS.assi, STAY_PRESETS.dashashwamedh]}
+        />
+      </div>
 
       <section className="mt-12" aria-labelledby="faq">
         <SectionHeading id="faq">Questions people ask</SectionHeading>

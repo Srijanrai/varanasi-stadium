@@ -154,11 +154,11 @@ export function SectionHeading({
   );
 }
 
-export function Sources({ sources }: { sources: { label: string; url: string }[] }) {
+export function Sources({ sources, label = "Sources:" }: { sources: { label: string; url: string }[]; label?: string }) {
   if (!sources.length) return null;
   return (
     <p className="text-sm text-muted">
-      Sources:{" "}
+      {label}{" "}
       {sources.map((s, i) => (
         <span key={s.url}>
           {i > 0 && ", "}

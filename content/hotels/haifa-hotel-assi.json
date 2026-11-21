@@ -1,0 +1,31 @@
+{
+  "type": "hotel",
+  "id": "h-haifa-hotel-assi",
+  "slug": "haifa-hotel-assi",
+  "name": "Haifa Hotel",
+  "category": "hotel",
+  "area": "assi",
+  "address": "B1/107, Assi Ghat Road, Varanasi",
+  "pincode": "221005",
+  "geo": {
+    "lat": 25.28847,
+    "lng": 83.00433
+  },
+  "phone": [
+    "+915422312960"
+  ],
+  "website": "https://www.hotelhaifavns.com/",
+  "summary": "Candidate stay on Assi Ghat Road. Not yet verified: we haven't called this hotel, so no details are confirmed.",
+  "description": "[VERIFY] Candidate found in public map data (OpenStreetMap) and web listings on 2026-11-20. It sits on Assi Ghat Road, a short walk from Assi Ghat, and could suit visitors combining a match with time on the ghats. Nothing here is confirmed yet.\n\n[VERIFY] Call and confirm: the hotel is open and the name is right; the exact address and pincode; the phone number; the rough room price range per night; check-in and check-out times; whether it takes foreign guests; and whether it will take bookings for match days.\n\n[ADD FIRST-HAND] After the call, replace this text with 150+ words in our own words. Add a photo you took, or one the owner gives permission for. Never use photos or text from booking sites.",
+  "quickFacts": [],
+  "photos": [],
+  "tags": [],
+  "amenities": [],
+  "verifiedAt": null,
+  "verificationMethod": null,
+  "ownerConsent": false,
+  "status": "draft",
+  "featured": false,
+  "createdAt": "2026-11-20",
+  "updatedAt": "2026-11-20"
+}

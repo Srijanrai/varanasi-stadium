@@ -8,6 +8,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ListingList } from "@/components/ListingRow";
 import { Breadcrumbs, Container, PageIntro, QuickAnswers, SectionHeading } from "@/components/ui";
 import { itemListJsonLd } from "@/lib/seo/jsonld";
+import { StayBoxSection } from "@/components/StayBoxServer";
 
 type Params = { slug: string };
 
@@ -63,6 +64,14 @@ export default async function AreaPage({ params }: { params: Promise<Params> }) 
           </section>
         );
       })}
+      <div className="mt-12">
+        <StayBoxSection
+          id={`area-${a.slug}`}
+          title={`Hotels in ${a.name}`}
+          intro={`Compare places to stay in and around ${a.name} on the partner sites below.`}
+          presets={[{ label: a.name, geo: a.geo, note: `${formatKm(haversineKm(a.geo, LANDMARKS.stadium.geo))} from the stadium in a straight line.` }]}
+        />
+      </div>
       <JsonLd data={itemListJsonLd(`${a.name}, Varanasi`, listings)} />
     </Container>
   );

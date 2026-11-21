@@ -13,6 +13,12 @@ export const SITE = {
     listBusiness: null as string | null,
     reportWrongInfo: null as string | null,
   },
+  // Affiliate partner IDs, from each programme's dashboard once approved. While both are null the
+  // booking boxes stay hidden on the live site and only appear in local preview (SHOW_DRAFTS=1).
+  affiliates: {
+    bookingAid: null as string | null, // Booking.com Affiliate Partner ID ("aid")
+    agodaCid: null as string | null, // Agoda Partners site ID ("cid")
+  },
   // Cloudflare Web Analytics beacon token (public, cookieless). Empty string disables the beacon.
   cloudflareAnalyticsToken: "04fb391a603643dbb58929f264d03e90",
   disclaimer:

@@ -28,7 +28,7 @@
   "ownerConsent": false,
   "featured": false,
   "createdAt": "2026-10-25",
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-11-20",
   "type": "temple",
   "id": "t-kashi-vishwanath",
   "slug": "kashi-vishwanath",
@@ -48,33 +48,41 @@
   "openingHours": [
     {
       "name": "Temple open",
+      "nameHi": "मंदिर खुला रहता है",
       "time": "3:00 am – 11:00 pm"
     },
     {
       "name": "Darshan",
+      "nameHi": "आम दर्शन",
       "time": "4:00–11:00 am, 12:20–7:00 pm, 8:30–9:00 pm"
     },
     {
       "name": "Entry from the ghat side (Gate 1)",
+      "nameHi": "घाट की तरफ़ से प्रवेश (गेट 1)",
       "time": "6:00 am – 9:00 pm"
     }
   ],
   "aartiTimings": [
     {
       "name": "Mangala Aarti",
+      "nameHi": "मंगला आरती",
       "time": "3:00–4:00 am",
-      "note": "report by 2:30 am at Gate 1"
+      "note": "report by 2:30 am at Gate 1",
+      "noteHi": "सुबह 2:30 बजे तक गेट 1 पर पहुँचें"
     },
     {
       "name": "Mid-day Bhog Aarti",
+      "nameHi": "मध्याह्न भोग आरती",
       "time": "11:15 am – 12:20 pm"
     },
     {
       "name": "Saptarishi Aarti",
+      "nameHi": "सप्तऋषि आरती",
       "time": "7:00–8:15 pm"
     },
     {
       "name": "Shringar / Night Aarti",
+      "nameHi": "श्रृंगार / रात्रि आरती",
       "time": "9:00–10:15 pm"
     }
   ],
@@ -88,6 +96,33 @@
     {
       "label": "Shri Kashi Vishwanath Temple Trust",
       "url": "https://shrikashivishwanath.org/"
+    }
+  ],
+  "seoTitle": "Kashi Vishwanath temple opening & closing time, VIP darshan",
+  "faqs": [
+    {
+      "q": "What time does Kashi Vishwanath temple open and close?",
+      "a": "The temple opens at 3 am and closes at 11 pm. General darshan runs in three windows: 4–11 am, 12:20–7 pm and 8:30–9 pm, with the aartis held in between. Timings change on festivals and in Shravan, so check the temple trust's official website before a special-day visit."
+    },
+    {
+      "q": "What is the VIP darshan ticket price at Kashi Vishwanath?",
+      "a": "What people call VIP darshan is officially Sugam Darshan, at ₹300 per person. It gives you a queue-free visit with a Shastri, a box of prasad and locker use. Book it only on the temple trust's official website or app. Agents outside who promise \"special darshan\" are not part of the official system."
+    },
+    {
+      "q": "Is darshan at Kashi Vishwanath free?",
+      "a": "Yes, general darshan is free. You only pay for Sugam Darshan and aarti bookings, and only on the official website or app."
+    },
+    {
+      "q": "What time is the Mangala Aarti?",
+      "a": "Mangala Aarti is from 3 to 4 am. Report at Gate 1 by 2:30 am. Book it only on the temple trust's official website or app."
+    },
+    {
+      "q": "Is a mobile phone allowed inside Kashi Vishwanath temple?",
+      "a": "No. Phones, cameras, any gadgets, bags and even pens aren't allowed inside. Free lockers are available at Mandir Chauk, the helpdesk and the YSK centres; leave your things there before you join the queue."
+    },
+    {
+      "q": "Is there a dress code at Kashi Vishwanath?",
+      "a": "There's no formal dress code, but the temple trust asks visitors to wear decent clothes."
     }
   ]
 }
