@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { cache } from "react";
 import matter from "gray-matter";
-import { marked } from "marked";
+import { Marked } from "marked";
 import { z } from "zod";
 import { AreaSchema, MatchSchema, PhotoSchema, type Area, type Match } from "../schema/listing";
 import { showDrafts } from "../site";
@@ -95,9 +95,77 @@ const PostFrontmatter = z.object({
   status: z.enum(["published", "draft"]),
   tags: z.array(z.string()).default([]),
   sources: z.array(SourceSchema).default([]),
+  /** Questions answered at the end of the post (rendered with FAQPage markup). */
+  faqs: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+  /** The place this post is about, as "<category path>/<slug>", e.g. "ghats/dashashwamedh-ghat". */
+  place: z.string().regex(/^[a-z-]+\/[a-z0-9-]+$/).optional(),
+  /** Photos used in the post. The first is the cover; the rest are placed in the text with ![alt](src). */
+  photos: z.array(PhotoSchema).default([]),
 });
 
-export type Post = z.infer<typeof PostFrontmatter> & { slug: string; html: string; readingMinutes: number };
+export type TocItem = { id: string; text: string };
+export type Post = z.infer<typeof PostFrontmatter> & { slug: string; html: string; readingMinutes: number; toc: TocItem[] };
+
+const plain = (md: string) => md.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/[*_`]/g, "").trim();
+const slugify = (s: string) =>
+  plain(s).toLowerCase().normalize("NFKC").replace(/[^\p{L}\p{M}\p{N}]+/gu, "-").replace(/^-+|-+$/g, "") || "section";
+
+/** Markdown to HTML with stable ids on h2/h3, so the table of contents can link to them. */
+const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+/** Caption crediting a third-party photo, matching the wording of <PhotoCredit>. */
+function creditHtml(p: z.infer<typeof PhotoSchema>) {
+  if (p.license === "own" && !p.sourceUrl) return esc(p.credit);
+  const who = p.sourceUrl ? `<a href="${esc(p.sourceUrl)}" target="_blank" rel="noopener nofollow">${esc(p.credit)}</a>` : esc(p.credit);
+  const licence = p.licenseName
+    ? p.licenseUrl
+      ? `, <a href="${esc(p.licenseUrl)}" target="_blank" rel="noopener nofollow license">${esc(p.licenseName)}</a>`
+      : `, ${esc(p.licenseName)}`
+    : "";
+  return `Photo: ${who}${p.edited ? `, ${esc(p.edited.toLowerCase())}` : ""}${licence}`;
+}
+
+function renderPost(content: string, photos: z.infer<typeof PhotoSchema>[] = [], file = "") {
+  const used = new Map<string, number>();
+  const idFor = (text: string) => {
+    const base = slugify(text);
+    const n = used.get(base) ?? 0;
+    used.set(base, n + 1);
+    return n ? `${base}-${n + 1}` : base;
+  };
+  const md = new Marked({ gfm: true });
+  const toc: TocItem[] = [];
+  md.use({
+    renderer: {
+      heading({ tokens, depth, text }) {
+        const inner = this.parser.parseInline(tokens);
+        if (depth !== 2 && depth !== 3) return `<h${depth}>${inner}</h${depth}>\n`;
+        const id = idFor(text);
+        if (depth === 2) toc.push({ id, text: plain(text) });
+        return `<h${depth} id="${id}">${inner}</h${depth}>\n`;
+      },
+      // Every image in a post must be declared in the frontmatter, so it always carries its credit.
+      image({ href, text }) {
+        const p = photos.find((x) => x.src === href);
+        if (!p) throw new Error(`${file}: image ${href} isn't listed under photos in the frontmatter`);
+        return `<figure class="post-figure"><img src="${esc(p.src)}" alt="${esc(text || p.alt)}" width="${p.width}" height="${p.height}" loading="lazy" decoding="async" /><figcaption>${creditHtml(p)}</figcaption></figure>`;
+      },
+    },
+  });
+  const html = md.parse(content, { async: false }) as string;
+  return { html, toc };
+}
+
+// A published post must be finished: no editing markers, a real author and at least one source.
+function assertPublishable(file: string, data: z.infer<typeof PostFrontmatter>, content: string) {
+  if (data.status !== "published") return;
+  const problems: string[] = [];
+  const all = `${content}\n${JSON.stringify(data.faqs)}`;
+  if (/\[(VERIFY|ADD FIRST-HAND)/.test(all)) problems.push("remove [VERIFY]/[ADD FIRST-HAND] markers");
+  if (/^\s*\[|YOUR NAME/i.test(data.author)) problems.push("set a real author");
+  if (!data.sources.length) problems.push("add at least one source");
+  if (problems.length) throw new Error(`Can't publish ${file}: ${problems.join("; ")}`);
+}
 export type PostKind = "guides" | "blog";
 
 export const getPosts = cache((kind: PostKind): Post[] => {
@@ -110,11 +178,12 @@ export const getPosts = cache((kind: PostKind): Post[] => {
       const { data, content } = matter(fs.readFileSync(path.join(dir, f), "utf8"));
       const fm = PostFrontmatter.safeParse(data);
       if (!fm.success) throw new Error(`Invalid frontmatter in ${kind}/${f}: ${fm.error.message}`);
+      assertPublishable(`${kind}/${f}`, fm.data, content);
       const words = content.trim().split(/\s+/).length;
       return {
         ...fm.data,
         slug: f.replace(/\.md$/, ""),
-        html: marked.parse(content, { async: false }) as string,
+        ...renderPost(content, fm.data.photos, `${kind}/${f}`),
         readingMinutes: Math.max(1, Math.round(words / 200)),
       };
     })

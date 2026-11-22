@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { getFaqs, getStadium } from "@/lib/data/content";
 import { pageMeta } from "@/lib/seo/meta";
+import { JsonLd } from "@/components/JsonLd";
+import { webPageJsonLd } from "@/lib/seo/jsonld";
 import { formatDate } from "@/lib/format";
 import { AlertCta } from "@/components/AlertCta";
 import { ShareWhatsApp } from "@/components/ShareWhatsApp";
@@ -116,6 +118,7 @@ export default function HindiTicketsPage() {
         <div className="mt-12">
           <AlertCta from="hi-tickets" lang="hi" />
         </div>
+        <JsonLd data={webPageJsonLd("/hi/stadium/tickets/", s.lastChecked, "hi-IN")} />
       </Container>
     </div>
   );

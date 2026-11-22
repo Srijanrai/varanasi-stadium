@@ -1,6 +1,8 @@
 import { getFaqs, getRoutes, getStadium } from "@/lib/data/content";
 import { LANDMARKS, roadKmEstimate } from "@/lib/geo";
 import { pageMeta } from "@/lib/seo/meta";
+import { JsonLd } from "@/components/JsonLd";
+import { webPageJsonLd } from "@/lib/seo/jsonld";
 import { SITE } from "@/lib/site";
 import { formatDate } from "@/lib/format";
 import { MatchDayPlanner, type PlannerOrigin } from "@/components/MatchDayPlanner";
@@ -46,7 +48,7 @@ export default function HowToReachPage() {
       />
       <PageIntro
         title="How to reach Varanasi cricket stadium"
-        lead="The stadium isn't in the part of Varanasi most visitors know. It's out at Ganjari, on the Rajatalab side, so getting there takes a bit of planning — especially on a match day when thousands of people are heading the same way."
+        lead="The stadium is at Ganjari, near Rajatalab on the Prayagraj side of Varanasi, roughly 15–18 km by road from Cantt station. It's outside the part of the city most visitors know, so plan the trip, especially on a match day when thousands of people are heading the same way."
       />
       <ul className="card grid grid-cols-2 gap-y-4 p-4 sm:grid-cols-4 sm:p-5">
         {[
@@ -178,6 +180,7 @@ export default function HowToReachPage() {
       <div className="mt-14">
         <AlertCta from="how-to-reach" />
       </div>
+      <JsonLd data={webPageJsonLd("/stadium/how-to-reach/", getStadium().lastChecked, "en-IN")} />
     </Container>
   );
 }

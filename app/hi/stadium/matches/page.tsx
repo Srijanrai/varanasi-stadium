@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getFaqs, getMatches, getStadium } from "@/lib/data/content";
 import { pageMeta } from "@/lib/seo/meta";
-import { sportsEventJsonLd } from "@/lib/seo/jsonld";
+import { sportsEventJsonLd , webPageJsonLd } from "@/lib/seo/jsonld";
 import { formatDate } from "@/lib/format";
 import { JsonLd } from "@/components/JsonLd";
 import { AlertCta } from "@/components/AlertCta";
@@ -35,7 +35,11 @@ export default function HindiMatchesPage() {
         />
         <PageIntro
           title="वाराणसी स्टेडियम में मैच कब है?"
-          lead="यहाँ सिर्फ़ वही मैच हैं जिनका ऐलान BCCI या UPCA ने आधिकारिक रूप से किया है। ख़बरों की अटकलें और अफ़वाहें इस पेज पर नहीं आतीं।"
+          lead={
+            upcoming.length
+              ? "ये वे मैच हैं जिनका ऐलान BCCI या UPCA ने वाराणसी स्टेडियम के लिए आधिकारिक रूप से किया है। ख़बरों की अटकलें और अफ़वाहें इस पेज पर नहीं आतीं।"
+              : "वाराणसी स्टेडियम में अभी कोई मैच आधिकारिक रूप से घोषित नहीं हुआ है। हम कोई मैच तभी जोड़ते हैं जब BCCI या UPCA उसकी पुष्टि करें; ख़बरों की अटकलें और अफ़वाहें यहाँ नहीं आतीं।"
+          }
         />
 
         {upcoming.length === 0 ? (
@@ -95,6 +99,7 @@ export default function HindiMatchesPage() {
         <div className="mt-12">
           <AlertCta from="hi-matches" lang="hi" />
         </div>
+        <JsonLd data={webPageJsonLd("/hi/stadium/matches/", getStadium().lastChecked, "hi-IN")} />
       </Container>
     </div>
   );

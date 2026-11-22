@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getFaqs, getNextMatch, getSiteImages, getStadium } from "@/lib/data/content";
 import { pageMeta } from "@/lib/seo/meta";
-import { stadiumJsonLd } from "@/lib/seo/jsonld";
+import { stadiumJsonLd , webPageJsonLd } from "@/lib/seo/jsonld";
 import { formatDate } from "@/lib/format";
 import { JsonLd } from "@/components/JsonLd";
 import { StatusBoard } from "@/components/StatusBoard";
@@ -114,6 +114,7 @@ export default function HindiStadiumPage() {
         <div className="mt-12">
           <AlertCta from="hi-stadium" lang="hi" />
         </div>
+        <JsonLd data={webPageJsonLd("/hi/stadium/", s.lastChecked, "hi-IN")} />
       </Container>
       <JsonLd data={stadiumJsonLd()} />
     </div>

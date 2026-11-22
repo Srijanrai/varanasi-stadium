@@ -1,6 +1,6 @@
 import { getFaqs, getMatches, getStadium } from "@/lib/data/content";
 import { pageMeta } from "@/lib/seo/meta";
-import { sportsEventJsonLd } from "@/lib/seo/jsonld";
+import { sportsEventJsonLd , webPageJsonLd } from "@/lib/seo/jsonld";
 import { formatDate } from "@/lib/format";
 import { JsonLd } from "@/components/JsonLd";
 import { AlertCta } from "@/components/AlertCta";
@@ -32,7 +32,11 @@ export default function MatchesPage() {
       />
       <PageIntro
         title="Varanasi cricket stadium match schedule"
-        lead="We only list a match here once BCCI or UPCA has officially announced it. News reports and rumours stay off this page."
+        lead={
+          upcoming.length
+            ? "These are the matches BCCI or UPCA have officially announced for the Varanasi stadium. News reports and rumours stay off this page."
+            : "No match at the Varanasi stadium has been officially announced yet. We list a match here only once BCCI or UPCA confirms it; news reports and rumours stay off this page."
+        }
       />
 
       {upcoming.length === 0 ? (
@@ -84,6 +88,7 @@ export default function MatchesPage() {
       <div className="mt-14">
         <AlertCta from="matches" />
       </div>
+      <JsonLd data={webPageJsonLd("/stadium/matches/", getStadium().lastChecked, "en-IN")} />
     </Container>
   );
 }

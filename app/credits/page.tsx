@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getListings } from "@/lib/data/listings";
-import { getSiteImages } from "@/lib/data/content";
+import { getPosts, getSiteImages } from "@/lib/data/content";
 import { listingUrl } from "@/lib/seo/jsonld";
 import { pageMeta } from "@/lib/seo/meta";
 import { TextPage } from "@/components/TextPage";
@@ -22,6 +22,11 @@ export default function CreditsPage() {
     ...(site.stadium ? [{ photo: site.stadium, usedOn: { label: "Stadium guide and home page (desktop)", href: "/stadium/" } }] : []),
     ...(site.stadiumMobile ? [{ photo: site.stadiumMobile, usedOn: { label: "Stadium guide and home page (phones)", href: "/stadium/" } }] : []),
     ...getListings().flatMap((l) => l.photos.map((photo) => ({ photo, usedOn: { label: l.name, href: listingUrl(l) } }))),
+    ...(["guides", "blog"] as const).flatMap((k) =>
+      getPosts(k)
+        .filter((p) => p.status === "published")
+        .flatMap((p) => p.photos.map((photo) => ({ photo, usedOn: { label: p.title, href: `/${k}/${p.slug}/` } }))),
+    ),
   ];
   // Only third-party photos need listing here; our own photos don't.
   const credited = rows.filter((r) => r.photo.license !== "own");

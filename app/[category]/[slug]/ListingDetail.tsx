@@ -3,7 +3,7 @@ import { marked } from "marked";
 import type { CategoryConfig } from "@/lib/categories";
 import { getNearby, isCategoryLive, type ListingWithDistances } from "@/lib/data/listings";
 import { getArea } from "@/lib/data/content";
-import { listingJsonLd, listingUrl } from "@/lib/seo/jsonld";
+import { listingJsonLd, listingUrl, webPageJsonLd } from "@/lib/seo/jsonld";
 import { LANDMARKS, formatKm, type LandmarkKey } from "@/lib/geo";
 import { formatDate, formatPriceRange } from "@/lib/format";
 import { SITE, formOrEmail } from "@/lib/site";
@@ -173,7 +173,7 @@ export function ListingDetail({ category: c, listing: l }: { category: CategoryC
           </div>
         </section>
       )}
-      <JsonLd data={listingJsonLd(l)} />
+      <JsonLd data={[listingJsonLd(l), webPageJsonLd(listingUrl(l), l.updatedAt)]} />
     </Container>
   );
 }

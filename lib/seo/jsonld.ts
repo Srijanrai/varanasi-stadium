@@ -115,6 +115,18 @@ export function stadiumJsonLd(): Json {
   };
 }
 
+/** Declares when a page's facts last changed. AI answer engines weigh this for "when / is it open" questions. */
+export function webPageJsonLd(path: string, dateModified: string, inLanguage: "en-IN" | "hi-IN" = "en-IN"): Json {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    url: absoluteUrl(path),
+    inLanguage,
+    dateModified,
+    isPartOf: { "@type": "WebSite", name: SITE.name, url: SITE.url },
+  };
+}
+
 export function faqJsonLd(faqs: { q: string; a: string }[]): Json {
   return {
     "@context": "https://schema.org",
@@ -135,7 +147,7 @@ export function sportsEventJsonLd(m: Match): Json {
   };
 }
 
-export function articleJsonLd(p: { title: string; summary: string; publishedAt: string; updatedAt: string; author: string }, path: string): Json {
+export function articleJsonLd(p: { title: string; summary: string; publishedAt: string; updatedAt: string; author: string; photos?: { src: string }[] }, path: string): Json {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -146,5 +158,6 @@ export function articleJsonLd(p: { title: string; summary: string; publishedAt: 
     author: { "@type": "Person", name: p.author },
     publisher: { "@type": "Organization", name: SITE.name },
     mainEntityOfPage: absoluteUrl(path),
+    ...(p.photos?.length ? { image: p.photos.map((x) => absoluteUrl(x.src)) } : {}),
   };
 }

@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to content
         </a>
-        <Header categories={nav} />
+        <Header categories={[...nav, ...(getPosts("guides").length ? [{ href: "/guides/", label: "Guides" }] : [])]} />
         <main id="main" className="flex-1">
           {children}
         </main>

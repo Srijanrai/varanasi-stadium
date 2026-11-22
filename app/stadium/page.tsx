@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getFaqs, getNextMatch, getSiteImages, getStadium } from "@/lib/data/content";
 import { getListings } from "@/lib/data/listings";
 import { pageMeta } from "@/lib/seo/meta";
-import { stadiumJsonLd } from "@/lib/seo/jsonld";
+import { stadiumJsonLd , webPageJsonLd } from "@/lib/seo/jsonld";
 import { JsonLd } from "@/components/JsonLd";
 import { StatusBoard } from "@/components/StatusBoard";
 import { AlertCta } from "@/components/AlertCta";
@@ -139,6 +139,7 @@ export default function StadiumPage() {
         <AlertCta from="stadium" />
       </div>
       <JsonLd data={stadiumJsonLd()} />
+      <JsonLd data={webPageJsonLd("/stadium/", getStadium().lastChecked, "en-IN")} />
     </Container>
   );
 }

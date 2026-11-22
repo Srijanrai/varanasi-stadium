@@ -1,5 +1,7 @@
 import { getStadium } from "@/lib/data/content";
 import { pageMeta } from "@/lib/seo/meta";
+import { JsonLd } from "@/components/JsonLd";
+import { webPageJsonLd } from "@/lib/seo/jsonld";
 import { formatDate } from "@/lib/format";
 import { AlertCta } from "@/components/AlertCta";
 import { Breadcrumbs, Container, PageIntro, Sources } from "@/components/ui";
@@ -62,6 +64,7 @@ export default function ConstructionUpdatesPage() {
       <div className="mt-14">
         <AlertCta from="construction" />
       </div>
+      <JsonLd data={webPageJsonLd("/stadium/construction-updates/", s.lastChecked, "en-IN")} />
     </Container>
   );
 }

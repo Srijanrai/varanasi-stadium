@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { getListing } from "@/lib/data/listings";
 import { getFaqs } from "@/lib/data/content";
 import { pageMeta } from "@/lib/seo/meta";
+import { webPageJsonLd } from "@/lib/seo/jsonld";
+import { JsonLd } from "@/components/JsonLd";
 import { formatDate } from "@/lib/format";
 import { ShareWhatsApp } from "@/components/ShareWhatsApp";
 import { Breadcrumbs, Container, FaqList, PageIntro, SectionHeading, Sources } from "@/components/ui";
@@ -115,6 +117,7 @@ export default function HindiKashiVishwanathPage() {
             Read this page in English
           </Link>
         </div>
+        <JsonLd data={webPageJsonLd(HI_PATH, l.updatedAt, "hi-IN")} />
       </Container>
     </div>
   );

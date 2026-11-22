@@ -13,7 +13,14 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<Params> }) {
   const p = getPost("blog", (await params).slug);
   if (!p) return {};
-  return pageMeta({ title: p.title, description: p.summary, path: `/blog/${p.slug}/`, noindex: p.status !== "published" });
+  const cover = p.photos[0];
+  return pageMeta({
+    title: p.title,
+    description: p.summary,
+    path: `/blog/${p.slug}/`,
+    noindex: p.status !== "published",
+    image: cover ? { url: cover.src, width: cover.width, height: cover.height, alt: cover.alt } : undefined,
+  });
 }
 
 export default async function Page({ params }: { params: Promise<Params> }) {

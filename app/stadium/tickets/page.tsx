@@ -1,5 +1,7 @@
 import { getFaqs, getStadium } from "@/lib/data/content";
 import { pageMeta } from "@/lib/seo/meta";
+import { JsonLd } from "@/components/JsonLd";
+import { webPageJsonLd } from "@/lib/seo/jsonld";
 import { formatDate } from "@/lib/format";
 import { AlertCta } from "@/components/AlertCta";
 import { ShareWhatsApp } from "@/components/ShareWhatsApp";
@@ -114,6 +116,7 @@ export default function TicketsPage() {
       <div className="mt-14">
         <AlertCta from="tickets" />
       </div>
+      <JsonLd data={webPageJsonLd("/stadium/tickets/", s.lastChecked, "en-IN")} />
     </Container>
   );
 }

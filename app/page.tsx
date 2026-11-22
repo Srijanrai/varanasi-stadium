@@ -44,6 +44,7 @@ export default function HomePage() {
   const images = getSiteImages();
   const categories = getLiveCategories();
   const posts = getPosts("blog").slice(0, 3);
+  const guides = getPosts("guides").slice(0, 3);
   const ropewayLive = Boolean(getListing("transport", "kashi-ropeway"));
   const canttKm = Math.round(roadKmEstimate(LANDMARKS.cantt.geo, LANDMARKS.stadium.geo));
   const aartiGhat = getListing("ghat", "dashashwamedh-ghat");
@@ -193,6 +194,25 @@ export default function HomePage() {
             </Photo>
           </Link>
           <PhotoCredit photo={images.aarti} className="mt-1.5 text-right" />
+        </Container>
+      )}
+
+      {guides.length > 0 && (
+        <Container className="mt-10">
+          <SectionHeading sub="Practical answers for your visit" action={{ href: "/guides/", label: "All guides" }}>
+            Guides
+          </SectionHeading>
+          <ul className="grid gap-4 md:grid-cols-3">
+            {guides.map((p) => (
+              <li key={p.slug}>
+                <Link href={`/guides/${p.slug}/`} className="card group block h-full p-5">
+                  <span className="text-xs font-semibold text-gold-ink">{p.readingMinutes} min read</span>
+                  <h3 className="mt-2 text-[1.15rem] font-bold leading-snug group-hover:text-gold-ink">{p.title}</h3>
+                  <p className="mt-2 line-clamp-2 text-sm text-muted">{p.summary}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </Container>
       )}
 

@@ -2,6 +2,8 @@ import Link from "next/link";
 import { getFaqs, getRoutes, getStadium } from "@/lib/data/content";
 import { LANDMARKS, roadKmEstimate } from "@/lib/geo";
 import { pageMeta } from "@/lib/seo/meta";
+import { JsonLd } from "@/components/JsonLd";
+import { webPageJsonLd } from "@/lib/seo/jsonld";
 import { SITE } from "@/lib/site";
 import { formatDate } from "@/lib/format";
 import { MatchDayPlanner, type PlannerOrigin } from "@/components/MatchDayPlanner";
@@ -47,7 +49,7 @@ export default function HindiHowToReachPage() {
         />
         <PageIntro
           title="वाराणसी क्रिकेट स्टेडियम (गंजारी) कैसे पहुँचें"
-          lead="स्टेडियम वाराणसी के उस हिस्से में नहीं है जिसे ज़्यादातर लोग जानते हैं। यह राजातालाब की तरफ़ गंजारी में है, इसलिए वहाँ पहुँचने में थोड़ी योजना चाहिए — ख़ासकर मैच वाले दिन, जब हज़ारों लोग एक ही रास्ते पर होंगे।"
+          lead="स्टेडियम गंजारी में है — राजातालाब के पास, वाराणसी के प्रयागराज वाली तरफ़, कैंट स्टेशन से सड़क के रास्ते लगभग 15–18 किमी। यह शहर के उस हिस्से से बाहर है जिसे ज़्यादातर लोग जानते हैं, इसलिए पहले से योजना बनाइए — ख़ासकर मैच वाले दिन, जब हज़ारों लोग एक ही रास्ते पर होंगे।"
         />
         <ul className="card grid grid-cols-2 gap-y-4 p-4 sm:grid-cols-4 sm:p-5">
           {[
@@ -177,6 +179,7 @@ export default function HindiHowToReachPage() {
         <div className="mt-14">
           <AlertCta from="hi-how-to-reach" lang="hi" />
         </div>
+        <JsonLd data={webPageJsonLd("/hi/stadium/how-to-reach/", getStadium().lastChecked, "hi-IN")} />
       </Container>
     </div>
   );
