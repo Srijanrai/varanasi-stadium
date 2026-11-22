@@ -62,8 +62,9 @@ export default function HomePage() {
           aspect="aspect-[3/4] sm:aspect-[21/8]"
           sizes="100vw"
           priority
-          // Warm sunset grade so the lit ghats glow amber, as in the approved mockup
-          imgClassName="[filter:sepia(0.55)_saturate(1.9)_hue-rotate(-10deg)_brightness(1.08)_contrast(1.05)]"
+          // The sunrise photo is already warm; a light lift keeps the amber without over-saturating it
+          // Crop from near the top on wide screens so the rising sun stays in frame
+          imgClassName="object-[50%_15%] [filter:saturate(1.1)_contrast(1.03)]"
         >
           <div className="absolute inset-0 bg-gradient-to-bl from-[#ff8a1f]/35 via-transparent to-transparent mix-blend-soft-light" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#021e3a]/90 via-[#021e3a]/45 to-transparent" />

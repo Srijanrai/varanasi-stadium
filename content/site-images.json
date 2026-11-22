@@ -1,15 +1,15 @@
 {
   "hero": {
-    "src": "/images/site/hero/varanasi-ghats-at-dusk-1.jpg",
-    "alt": "The ghats of Varanasi lit up at dusk, with boats on the Ganga",
-    "credit": "Goutam1962 / Wikimedia Commons",
+    "src": "/images/site/hero/varanasi-boats-at-sunrise-ganga.jpg",
+    "alt": "Wooden boats moored at the ghat steps as the sun rises over the Ganga in Varanasi",
+    "credit": "Schwiki / Wikimedia Commons",
     "license": "cc-by-sa",
     "licenseName": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghats_of_Varanasi_During_Dusk_99.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boats_at_sunrise_Ganges_River_Varanasi_Uttar_Pradesh_Schwiki.jpg",
     "width": 1920,
-    "height": 1080,
-    "edited": "Colour-graded and cropped"
+    "height": 1081,
+    "edited": "Resized"
   },
   "aarti": {
     "src": "/images/site/aarti/evening-ganga-aarti-dashashwamedh-1.jpg",
