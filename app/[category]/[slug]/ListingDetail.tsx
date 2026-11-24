@@ -14,6 +14,7 @@ import { ShareWhatsApp } from "@/components/ShareWhatsApp";
 import { PhotoCard, listingKind } from "@/components/ListingRow";
 import { Gallery } from "@/components/Gallery";
 import { CATEGORY_ICONS, IconCheck, IconPin } from "@/components/icons";
+import { Stay22Map } from "@/components/Stay22Map";
 import { Breadcrumbs, Container, DraftNotice, FaqList, QuickAnswers, SectionHeading, Sources } from "@/components/ui";
 
 export function ListingDetail({ category: c, listing: l }: { category: CategoryConfig; listing: ListingWithDistances }) {
@@ -117,6 +118,8 @@ export function ListingDetail({ category: c, listing: l }: { category: CategoryC
               </div>
             )}
           </section>
+
+          {l.type === "ghat" && <Stay22Map name={l.name} geo={l.geo} campaign={`ghat-${l.slug}`} />}
 
           {l.faqs.length > 0 && (
             <section className="mt-10" aria-labelledby="faq">

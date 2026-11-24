@@ -18,6 +18,7 @@ export const SITE = {
   affiliates: {
     bookingAid: null as string | null, // Booking.com Affiliate Partner ID ("aid")
     agodaCid: null as string | null, // Agoda Partners site ID ("cid")
+    stay22Aid: "varanasistadiumguide" as string | null, // Stay22 affiliate ID ("aid"), from hub.stay22.com
   },
   // Cloudflare Web Analytics beacon token (public, cookieless). Empty string disables the beacon.
   cloudflareAnalyticsToken: "04fb391a603643dbb58929f264d03e90",
