@@ -34,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const extra = [
     ...(getListings().length ? [{ href: "/areas/", label: "Areas" }] : []),
     ...(getPosts("guides").length ? [{ href: "/guides/", label: "Guides" }] : []),
+    ...(getPosts("festivals").length ? [{ href: "/festivals/", label: "Festivals" }] : []),
     ...(getPosts("blog").length ? [{ href: "/blog/", label: "News" }] : []),
   ];
   return (

@@ -3,17 +3,31 @@ import { notFound } from "next/navigation";
 import { getPost, getPosts, type Post, type PostKind } from "@/lib/data/content";
 import { getCategoryByPath } from "@/lib/categories";
 import { getListing } from "@/lib/data/listings";
-import { articleJsonLd, listingUrl } from "@/lib/seo/jsonld";
+import { articleJsonLd, eventJsonLd, listingUrl } from "@/lib/seo/jsonld";
 import { formatDate } from "@/lib/format";
 import { formatKm } from "@/lib/geo";
 import { JsonLd } from "./JsonLd";
 import { Photo, PhotoCredit } from "./Photo";
 import { AlertCta } from "./AlertCta";
 import { ShareWhatsApp } from "./ShareWhatsApp";
-import { IconChevron, IconPin } from "./icons";
+import { IconCalendar, IconChevron, IconPin } from "./icons";
+import { Stay22Map } from "./Stay22Map";
 import { Breadcrumbs, Container, DraftNotice, FaqList, PageIntro, SectionHeading, Sources } from "./ui";
 
-const LABEL: Record<PostKind, string> = { blog: "News", guides: "Guides" };
+const LABEL: Record<PostKind, string> = { blog: "News", guides: "Guides", festivals: "Festivals" };
+
+/** "Fri, 15 Jan 2027", or a range when the festival runs over several days. */
+function eventDate(e: NonNullable<Post["event"]>) {
+  const f = (iso: string) =>
+    new Date(`${iso}T00:00:00+05:30`).toLocaleDateString("en-IN", {
+      weekday: "short",
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+      timeZone: "Asia/Kolkata",
+    });
+  return e.endDate && e.endDate !== e.startDate ? `${f(e.startDate)} – ${f(e.endDate)}` : f(e.startDate);
+}
 
 export function hasPublishedPosts(kind: PostKind) {
   return getPosts(kind).some((p) => p.status === "published");
@@ -45,7 +59,14 @@ export function PostIndex({ kind, title, lead }: { kind: PostKind; title: string
             <li key={p.slug}>
               <Link href={`/${kind}/${p.slug}/`} className="card group flex h-full flex-col p-5 sm:p-6">
                 <span className="text-xs font-semibold text-gold-ink">
-                  <Meta p={p} />
+                  {p.event ? (
+                    <>
+                      <IconCalendar className="mr-1 inline h-3.5 w-3.5 align-[-2px]" />
+                      {eventDate(p.event)}
+                    </>
+                  ) : (
+                    <Meta p={p} />
+                  )}
                 </span>
                 <h2 className="mt-2 text-[1.35rem] leading-snug group-hover:text-gold-ink">{p.title}</h2>
                 <p className="mt-2 text-muted">{p.summary}</p>
@@ -98,6 +119,19 @@ export function PostView({ kind, slug }: { kind: PostKind; slug: string }) {
           {p.status === "draft" && <DraftNotice />}
         </PageIntro>
 
+        {p.event && (
+          <div className="mb-8 flex max-w-[66ch] items-start gap-4 rounded-2xl bg-[var(--cream)] p-5">
+            <span className="icon-tile h-11 w-11 shrink-0">
+              <IconCalendar className="h-5 w-5" />
+            </span>
+            <div>
+              <p className="text-xs font-semibold tracking-[0.1em] text-muted">NEXT DATE</p>
+              <p className="mt-0.5 text-lg font-bold">{eventDate(p.event)}</p>
+              {p.event.dateNote && <p className="mt-1 text-sm text-muted">{p.event.dateNote}</p>}
+            </div>
+          </div>
+        )}
+
         {p.photos[0] && (
           <figure className="mb-8">
             <Photo photo={p.photos[0]} aspect="aspect-[16/9]" sizes="(min-width:1152px) 1104px, 100vw" priority className="rounded-[20px]" />
@@ -146,11 +180,17 @@ export function PostView({ kind, slug }: { kind: PostKind; slug: string }) {
           </section>
         )}
 
-        {kind === "guides" && (
+        {kind === "festivals" && place && (
+          <div className="max-w-[66ch]">
+            <Stay22Map name={place.name} geo={place.geo} campaign={`festival-${p.slug}`} />
+          </div>
+        )}
+
+        {(kind === "guides" || kind === "festivals") && (
           <aside role="note" className="mt-10 max-w-[66ch] rounded-2xl bg-soft p-5 text-sm leading-relaxed">
             <p className="font-semibold">This information may change</p>
             <p className="mt-1 text-muted">
-              Timings, fares, distances and rules in this guide come from the sources listed below and were last reviewed
+              {kind === "festivals" ? "Dates, timings, crowd arrangements and rules on this page" : "Timings, fares, distances and rules in this guide"} come from the sources listed below and were last reviewed
               on {formatDate(p.updatedAt)}. They can change with the season, festivals, crowd control or official notices,
               so please confirm locally before you go.{" "}
               <Link href="/contact/" className="link">
@@ -190,6 +230,7 @@ export function PostView({ kind, slug }: { kind: PostKind; slug: string }) {
         <AlertCta from={`${kind}-post`} />
       </div>
       <JsonLd data={articleJsonLd(p, path)} />
+      {p.event && <JsonLd data={eventJsonLd(p.event, p, path, place?.name)} />}
     </Container>
   );
 }

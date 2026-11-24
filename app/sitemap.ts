@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl("/stadium/construction-updates/"), lastModified: stadiumDate },
     ...(getListings().length ? [{ url: absoluteUrl("/areas/") }] : []),
     ...(getLiveCategories().length ? [{ url: absoluteUrl("/explore/"), priority: 0.8 }] : []),
-    ...(["blog", "guides"] as const).filter((k) => getPosts(k).some((p) => p.status === "published")).map((k) => ({ url: absoluteUrl(`/${k}/`) })),
+    ...(["blog", "guides", "festivals"] as const).filter((k) => getPosts(k).some((p) => p.status === "published")).map((k) => ({ url: absoluteUrl(`/${k}/`) })),
     ...["/about/", "/editorial-policy/", "/list-your-business/", "/contact/", "/disclaimer/", "/privacy-policy/", "/terms/", "/credits/"].map(
       (p) => ({ url: absoluteUrl(p) }),
     ),
@@ -53,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
   for (const a of getAreas().filter((a) => isAreaIndexable(a.slug)))
     entries.push({ url: absoluteUrl(`/areas/${a.slug}/`) });
-  for (const kind of ["blog", "guides"] as const)
+  for (const kind of ["blog", "guides", "festivals"] as const)
     for (const p of getPosts(kind).filter((p) => p.status === "published"))
       entries.push({ url: absoluteUrl(`/${kind}/${p.slug}/`), lastModified: p.updatedAt });
 

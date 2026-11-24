@@ -161,3 +161,30 @@ export function articleJsonLd(p: { title: string; summary: string; publishedAt: 
     ...(p.photos?.length ? { image: p.photos.map((x) => absoluteUrl(x.src)) } : {}),
   };
 }
+
+/** A festival as a schema.org Event, held in Varanasi. Free to attend, in person. */
+export function eventJsonLd(
+  e: { name: string; startDate: string; endDate?: string },
+  p: { summary: string; photos?: { src: string }[] },
+  path: string,
+  placeName?: string,
+): Json {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: e.name,
+    description: p.summary,
+    startDate: e.startDate,
+    endDate: e.endDate ?? e.startDate,
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    isAccessibleForFree: true,
+    location: {
+      "@type": "Place",
+      name: placeName ? `${placeName}, Varanasi` : "Varanasi",
+      address: { "@type": "PostalAddress", addressLocality: "Varanasi", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
+    },
+    url: absoluteUrl(path),
+    ...(p.photos?.length ? { image: p.photos.map((x) => absoluteUrl(x.src)) } : {}),
+  };
+}

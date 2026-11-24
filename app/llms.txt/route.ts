@@ -16,7 +16,7 @@ export function GET() {
     .filter((l) => l.status === "published")
     .map((l) => `- [${l.name}](${absoluteUrl(listingUrl(l))}): ${l.summary}`)
     .join("\n");
-  const posts = (["guides", "blog"] as const)
+  const posts = (["guides", "festivals", "blog"] as const)
     .flatMap((k) => getPosts(k).filter((p) => p.status === "published").map((p) => ({ ...p, kind: k })))
     .map((p) => `- [${p.title}](${absoluteUrl(`/${p.kind}/${p.slug}/`)}): ${p.summary} (updated ${p.updatedAt})`)
     .join("\n");

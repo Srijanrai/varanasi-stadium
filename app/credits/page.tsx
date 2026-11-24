@@ -22,7 +22,7 @@ export default function CreditsPage() {
     ...(site.stadium ? [{ photo: site.stadium, usedOn: { label: "Stadium guide and home page (desktop)", href: "/stadium/" } }] : []),
     ...(site.stadiumMobile ? [{ photo: site.stadiumMobile, usedOn: { label: "Stadium guide and home page (phones)", href: "/stadium/" } }] : []),
     ...getListings().flatMap((l) => l.photos.map((photo) => ({ photo, usedOn: { label: l.name, href: listingUrl(l) } }))),
-    ...(["guides", "blog"] as const).flatMap((k) =>
+    ...(["guides", "festivals", "blog"] as const).flatMap((k) =>
       getPosts(k)
         .filter((p) => p.status === "published")
         .flatMap((p) => p.photos.map((photo) => ({ photo, usedOn: { label: p.title, href: `/${k}/${p.slug}/` } }))),

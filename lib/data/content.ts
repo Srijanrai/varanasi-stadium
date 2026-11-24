@@ -101,6 +101,16 @@ const PostFrontmatter = z.object({
   place: z.string().regex(/^[a-z-]+\/[a-z0-9-]+$/).optional(),
   /** Photos used in the post. The first is the cover; the rest are placed in the text with ![alt](src). */
   photos: z.array(PhotoSchema).default([]),
+  /** Festival pages only: when it next happens. One fixed URL per festival; update these dates each year. */
+  event: z
+    .object({
+      name: z.string(),
+      startDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+      endDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+      /** Shown under the date, e.g. which calendar it comes from or why some calendars differ. */
+      dateNote: z.string().optional(),
+    })
+    .optional(),
 });
 
 export type TocItem = { id: string; text: string };
@@ -164,9 +174,10 @@ function assertPublishable(file: string, data: z.infer<typeof PostFrontmatter>, 
   if (/\[(VERIFY|ADD FIRST-HAND)/.test(all)) problems.push("remove [VERIFY]/[ADD FIRST-HAND] markers");
   if (/^\s*\[|YOUR NAME/i.test(data.author)) problems.push("set a real author");
   if (!data.sources.length) problems.push("add at least one source");
+  if (file.startsWith("festivals/") && !data.event) problems.push("add the event dates");
   if (problems.length) throw new Error(`Can't publish ${file}: ${problems.join("; ")}`);
 }
-export type PostKind = "guides" | "blog";
+export type PostKind = "guides" | "blog" | "festivals";
 
 export const getPosts = cache((kind: PostKind): Post[] => {
   const dir = path.join(CONTENT_DIR, kind);
@@ -188,7 +199,10 @@ export const getPosts = cache((kind: PostKind): Post[] => {
       };
     })
     .filter((p) => p.status === "published" || showDrafts)
-    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+    .sort((a, b) =>
+      // Festivals: soonest first. Everything else: newest first.
+      a.event && b.event ? a.event.startDate.localeCompare(b.event.startDate) : b.publishedAt.localeCompare(a.publishedAt),
+    );
 });
 
 export const getPost = (kind: PostKind, slug: string) => getPosts(kind).find((p) => p.slug === slug);
