@@ -11,13 +11,14 @@ export const metadata = pageMeta({
 // [REVIEW] Have a lawyer check this against the Digital Personal Data Protection Act, 2023 before launch.
 export default function Page() {
   return (
-    <TextPage title="Privacy policy" path="/privacy-policy/" updated="29 Oct 2026">
+    <TextPage title="Privacy policy" path="/privacy-policy/" updated="25 Nov 2026">
       <h2>What we collect</h2>
       <ul>
         <li>
           <strong>Visiting the site:</strong> anonymous usage statistics (pages viewed, rough location by country, device
-          type) through Cloudflare Web Analytics, which doesn&apos;t use cookies or track you across other sites. We
-          don&apos;t use this to identify you.
+          type, and which buttons are used, such as &quot;Call&quot; or &quot;Directions&quot;) through Cloudflare Web
+          Analytics and PostHog (servers in the USA). Neither uses cookies or stores anything on your device, and neither
+          tracks you across other sites. We don&apos;t record your screen and don&apos;t use this to identify you.
         </li>
         <li>
           <strong>Forms:</strong> if you fill in our business listing or correction forms, we collect what you enter — such

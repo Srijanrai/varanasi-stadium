@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { BottomNav } from "@/components/BottomNav";
 import { themeInitScript } from "@/components/ThemeToggle";
 import { JsonLd } from "@/components/JsonLd";
+import { Analytics } from "@/components/Analytics";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/jsonld";
 import { getListings, getLiveCategories } from "@/lib/data/listings";
 import { getPosts } from "@/lib/data/content";
@@ -57,6 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer categories={[...nav, ...extra]} />
         <BottomNav />
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
+        {process.env.NODE_ENV === "production" && <Analytics />}
         {/* Cloudflare Web Analytics: cookieless page-view beacon. Production only, so local dev never counts as traffic. */}
         {process.env.NODE_ENV === "production" && SITE.cloudflareAnalyticsToken && (
           <script

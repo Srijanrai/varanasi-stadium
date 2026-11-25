@@ -22,6 +22,8 @@ export const SITE = {
   },
   // Cloudflare Web Analytics beacon token (public, cookieless). Empty string disables the beacon.
   cloudflareAnalyticsToken: "04fb391a603643dbb58929f264d03e90",
+  // PostHog project key (public by design, it only allows sending events). US cloud; events go through the /ingest proxy in netlify.toml.
+  posthogKey: "phc_xWK3CBtwCVZJzvYdXHseXiB3M8fwoYAa7v6Ctb8zMbFP" as string | null,
   disclaimer:
     "Independent, unofficial guide. Not affiliated with BCCI, UPCA, IPL, WPL or any government body. We do not sell tickets.",
   locale: "en_IN",

@@ -1,3 +1,22 @@
 # Only adds a post-deploy step. Build command and publish settings stay as configured in the Netlify UI.
 [[plugins]]
   package = "./plugins/indexnow"
+
+# PostHog analytics, served from our own domain so ad blockers drop fewer events (components/Analytics.tsx).
+[[redirects]]
+  from = "/ingest/static/*"
+  to = "https://us-assets.i.posthog.com/static/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/ingest/array/*"
+  to = "https://us-assets.i.posthog.com/array/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/ingest/*"
+  to = "https://us.i.posthog.com/:splat"
+  status = 200
+  force = true
